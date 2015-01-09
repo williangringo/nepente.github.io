@@ -1,23 +1,635 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name = "format-detection" content = "telephone=no" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-migrate-1.2.1.js"></script>
 
-<div class="home">
+  <!--[if lt IE 9]>
+  <div id="ie6-alert" style="width: 100%; text-align:center;">
+    <img src="http://beatie6.frontcube.com/images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0" usemap="#Map" longdesc="http://die6.frontcube.com" />
+      <map name="Map" id="Map"><area shape="rect" coords="496,201,604,329" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank" alt="Download Interent Explorer" /><area shape="rect" coords="380,201,488,329" href="http://www.apple.com/safari/download/" target="_blank" alt="Download Apple Safari" /><area shape="rect" coords="268,202,376,330" href="http://www.opera.com/download/" target="_blank" alt="Download Opera" /><area shape="rect" coords="155,202,263,330" href="http://www.mozilla.com/" target="_blank" alt="Download Firefox" />
+        <area shape="rect" coords="35,201,143,329" href="http://www.google.com/chrome" target="_blank" alt="Download Google Chrome" />
+      </map>
+  </div>
+  <![endif]-->
+  <!--[if lt IE 9]>
+  	<script src="js/html5shiv.js"></script>
+  <![endif]-->
+</head>
 
-  <h1 class="page-heading">Posts</h1>
+<body class="home">
+  <div class="content-load-spinner"></div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <!--========================================================
+                            HEADER
+  =========================================================-->
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
 
-</div>
+
+  <div class="aside-panel">
+    <span class="fa fa-times-circle-o remove-panel"></span>
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">sobre</a></li>
+      <li><a href="#team">time</a></li>
+      <li><a href="#folio">folio</a></li>
+      <li><a href="#services">serviços</a></li>
+      <li><a href="#news">novidades</a></li>
+      <li><a href="#contacts">contato</a></li>
+    </ul>
+  </div>
+
+  <div class="menu-switcher-panel">
+    <ul class="aside-menu">
+      <li><a href="#home"></a></li>
+      <li><a href="#about"></a></li>
+      <li><a href="#team"></a></li>
+      <li><a href="#folio"></a></li>
+      <li><a href="#services"></a></li>
+      <li><a href="#news"></a></li>
+      <li><a href="#contacts"></a></li>
+    </ul>
+  </div>
+
+
+
+  <!--========================================================
+                            CONTENT
+  =========================================================-->
+  <section id="content">
+
+    <section id="home" class="hashAncor">
+      <div class="video-overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="grid_12">
+            <div class="logo"><a href="index.html">nepente</a></div>
+            <div class="slogan wow fadeInUp">
+              <h2>página em construção!</h2>
+              <span>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="hashAncor">
+      <div class="container">
+        <div class="row">
+          <div class="grid_12">
+            <h2 class="heading__color wow fadeInUp">sobre</h2>
+            <h3 class=" wow fadeInLeft">Creating really user-friendly</h3>
+            <h4 class=" wow fadeInRight">websites that work for your benefit</h4>
+            <div class="about-indent wow fadeInDown">
+              Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur.
+            </div>
+            <a href="#" class="btn-default wow fadeIn">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="statistics" data-stellar-background-ratio="-0.1">
+      <div class="container">
+        <div class="row">
+          <div class="grid_12">
+            <h2 class=" wow fadeInUp">statistics</h2>
+            <div class="statistics-indent wow fadeInDown">
+              Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="grid_3">
+            <div class="box-1 box-1__active wow fadeInUp">
+              <span class="skill-number" data-from="0" data-to="1028" data-speed="1.5" ></span>
+              <span class="skill-title">Amet conse ctetur</span>
+            </div>
+          </div>
+          <div class="grid_3">
+            <div class="box-1 wow fadeInDown">
+              <span class="skill-number" data-from="0" data-to="728" data-speed="1.5" ></span>
+              <span class="skill-title">Lorem ipsum dolor</span>
+            </div>
+          </div>
+          <div class="grid_3">
+            <div class="box-1 wow fadeInUp">
+              <span class="skill-number" data-from="0" data-to="56" data-speed="1.5" ></span>
+              <span class="skill-title"> amet conse ctetur adipisicing eli</span>
+            </div>
+          </div>
+          <div class="grid_3">
+            <div class="box-1 wow fadeInDown">
+              <span class="skill-number" data-from="0" data-to="896" data-speed="1.5" ></span>
+              <span class="skill-title">eiusmod tempor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="hashAncor">
+      <div class="container">
+        <div class="row">
+          <div class="grid_12">
+            <h2 class="heading__color wow fadeInUp">time</h2>
+          </div>
+        </div>
+      </div>
+      <div class="team-list owl">
+        <div class="thumbnail wow fadeInUp item" data-wow-delay="0.2s">
+          <img src="images/team-img-1.jpg" alt="" >
+          <div class="thumb-text">
+            <a href="#" class="team-link">Amet conse ctetur </a>
+            <span class="member-text">Dolor sit amet</span>
+          </div>
+          <div class="member-description">
+            <ul class="social-contact">
+              <li><a href="#" class="fa fa-facebook"></a></li>
+              <li><a href="#" class="fa fa-twitter"></a></li>
+              <li><a href="#" class="fa fa-google-plus"></a></li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="thumbnail wow fadeInUp item" data-wow-delay="0.4s">
+          <img src="images/team-img-2.jpg" alt="" >
+          <div class="thumb-text">
+            <a href="#" class="team-link">Excepteur sint</a>
+            <span class="member-text">Dolor sit amet</span>
+          </div>
+          <div class="member-description">
+            <ul class="social-contact">
+              <li><a href="#" class="fa fa-facebook"></a></li>
+              <li><a href="#" class="fa fa-twitter"></a></li>
+              <li><a href="#" class="fa fa-google-plus"></a></li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="thumbnail wow fadeInUp item" data-wow-delay="0.6s">
+          <img src="images/team-img-3.jpg" alt="" >
+          <div class="thumb-text">
+            <a href="#" class="team-link">Amet conse ctetur </a>
+            <span class="member-text">Dolor sit amet</span>
+          </div>
+          <div class="member-description">
+            <ul class="social-contact">
+              <li><a href="#" class="fa fa-facebook"></a></li>
+              <li><a href="#" class="fa fa-twitter"></a></li>
+              <li><a href="#" class="fa fa-google-plus"></a></li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="thumbnail wow fadeInDown item" data-wow-delay="0.2s">
+         <img src="images/team-img-4.jpg" alt="" >
+         <div class="thumb-text">
+            <a href="#" class="team-link">proident sunt in culpa</a>
+            <span class="member-text">Dolor sit amet</span>
+          </div>
+          <div class="member-description">
+            <ul class="social-contact">
+              <li><a href="#" class="fa fa-facebook"></a></li>
+              <li><a href="#" class="fa fa-twitter"></a></li>
+              <li><a href="#" class="fa fa-google-plus"></a></li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="thumbnail wow fadeInDown item" data-wow-delay="0.4s">
+          <img src="images/team-img-5.jpg" alt="" >
+          <div class="thumb-text">
+            <a href="#" class="team-link">qui officia deserun</a>
+            <span class="member-text">Dolor sit amet</span>
+          </div>
+          <div class="member-description">
+            <ul class="social-contact">
+              <li><a href="#" class="fa fa-facebook"></a></li>
+              <li><a href="#" class="fa fa-twitter"></a></li>
+              <li><a href="#" class="fa fa-google-plus"></a></li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="thumbnail wow fadeInDown item" data-wow-delay="0.6s">
+          <img src="images/team-img-6.jpg" alt="" >
+          <div class="thumb-text">
+            <a href="#" class="team-link">mollit anim</a>
+            <span class="member-text">Dolor sit amet</span>
+          </div>
+          <div class="member-description">
+            <ul class="social-contact">
+              <li><a href="#" class="fa fa-facebook"></a></li>
+              <li><a href="#" class="fa fa-twitter"></a></li>
+              <li><a href="#" class="fa fa-google-plus"></a></li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="thumbnail wow fadeInUp item" data-wow-delay="0.2s">
+          <img src="images/team-img-1.jpg" alt="" >
+          <div class="thumb-text">
+            <a href="#" class="team-link">Amet conse ctetur </a>
+            <span class="member-text">Dolor sit amet</span>
+          </div>
+          <div class="member-description">
+            <ul class="social-contact">
+              <li><a href="#" class="fa fa-facebook"></a></li>
+              <li><a href="#" class="fa fa-twitter"></a></li>
+              <li><a href="#" class="fa fa-google-plus"></a></li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="container">
+        <div class="testimonials-indent">
+          <div class="row">
+            <div class="grid_12">
+              <div class="blockquote-img wow fadeInDown">
+                <img src="images/blockquote-img.png" alt="">
+              </div>
+              <div id="owl" class="owl-carousel wow fadeInLeft">
+                <div class="blockquote item grid_6">
+                  <img src="images/testimonial-img-1.png" alt="" class="testimonial-img">
+                  <blockquote>
+                    Dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    <span>Amet conse ctetur </span>
+                  </blockquote>
+                </div>
+                <div class="blockquote item grid_6">
+                  <img src="images/testimonial-img-2.png" alt="" class="testimonial-img">
+                  <blockquote>
+                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    <span>Lorem set</span>
+                  </blockquote>
+                </div>
+                <div class="blockquote item grid_6">
+                  <img src="images/testimonial-img-3.png" alt="" class="testimonial-img">
+                  <blockquote>
+                    Dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    <span>Amet conse ctetur </span>
+                  </blockquote>
+                </div>
+                <div class="blockquote item grid_6">
+                  <img src="images/testimonial-img-4.png" alt="" class="testimonial-img">
+                  <blockquote>
+                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    <span>Lorem set</span>
+                  </blockquote>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="folio"  class="hashAncor"  data-stellar-background-ratio="-0.1">
+      <div class="folio-indent">
+        <div class="container">
+          <div class="row">
+            <div class="grid_12">
+              <h2 class="wow fadeInDown">folio</h2>
+              <ul class="isotope-list wow fadeInUp" id="filters" data-option-key="filter">
+                <li><a href="#" class="active" data-filter="*">All</a></li>
+                <li><a href="#" data-filter=".filter-video">Video</a></li>
+                <li><a href="#" data-filter=".filter-branding">Branding</a></li>
+                <li><a href="#" data-filter=".filter-logo">Logo</a></li>
+                <li><a href="#" data-filter=".filter-photo">Photo</a></li>
+              </ul>
+              <div class="folio-block">
+                <div class="folio-thumb filter-video anim">
+                  <img src="images/folio-img-1.jpg" alt="" >
+                  <div class="folio-description">
+                    <a href="#" class="folio-link">Amet conse ctetur</a>
+                    <span class="folio-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidi</span>
+                    <p><a href="images/big-img/folio-img-1.jpg" class="fa fa-search-plus zoom"></a></p>
+                  </div>
+                </div>
+                <div class="folio-thumb filter-photo anim">
+                  <img src="images/folio-img-2.jpg" alt="" >
+                  <div class="folio-description">
+                    <a href="#" class="folio-link">Amet conse ctetur</a>
+                    <span class="folio-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidi</span>
+                    <p><a href="images/big-img/folio-img-2.jpg" class="fa fa-search-plus zoom"></a></p>
+                  </div>
+                </div>
+                <div class="folio-thumb filter-logo anim">
+                  <img src="images/folio-img-3.jpg" alt="" >
+                  <div class="folio-description">
+                    <a href="#" class="folio-link">Amet conse ctetur</a>
+                    <span class="folio-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidi</span>
+                    <p><a href="images/big-img/folio-img-3.jpg" class="fa fa-search-plus zoom"></a></p>
+                  </div>
+                </div>
+                <div class="folio-thumb filter-branding anim">
+                  <img src="images/folio-img-4.jpg" alt="" >
+                  <div class="folio-description">
+                    <a href="#" class="folio-link">Amet conse ctetur</a>
+                    <span class="folio-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidi</span>
+                    <p><a href="images/big-img/folio-img-4.jpg" class="fa fa-search-plus zoom"></a></p>
+                  </div>
+                </div>
+                <div class="folio-thumb filter-logo anim">
+                  <img src="images/folio-img-5.jpg" alt="" >
+                  <div class="folio-description">
+                    <a href="#" class="folio-link">Amet conse ctetur</a>
+                    <span class="folio-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidi</span>
+                    <p><a href="images/big-img/folio-img-5.jpg" class="fa fa-search-plus zoom"></a></p>
+                  </div>
+                </div>
+                <div class="folio-thumb filter-photo anim">
+                  <img src="images/folio-img-6.jpg" alt="" >
+                  <div class="folio-description">
+                    <a href="#" class="folio-link">Amet conse ctetur</a>
+                    <span class="folio-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidi</span>
+                    <p><a href="images/big-img/folio-img-6.jpg" class="fa fa-search-plus zoom"></a></p>
+                  </div>
+                </div>
+                <div class="folio-thumb filter-branding anim">
+                  <img src="images/folio-img-7.jpg" alt="" >
+                  <div class="folio-description">
+                    <a href="#" class="folio-link">Amet conse ctetur</a>
+                    <span class="folio-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidi</span>
+                    <p><a href="images/big-img/folio-img-7.jpg" class="fa fa-search-plus zoom"></a></p>
+                  </div>
+                </div>
+                <div class="folio-thumb filter-video anim">
+                  <img src="images/folio-img-8.jpg" alt="" >
+                  <div class="folio-description">
+                    <a href="#" class="folio-link">Amet conse ctetur</a>
+                    <span class="folio-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidi</span>
+                    <p><a href="images/big-img/folio-img-8.jpg" class="fa fa-search-plus zoom"></a></p>
+                  </div>
+                </div>
+                <div class="folio-thumb filter-photo anim">
+                  <img src="images/folio-img-9.jpg" alt="" >
+                  <div class="folio-description">
+                    <a href="#" class="folio-link">Amet conse ctetur</a>
+                    <span class="folio-text">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidi</span>
+                    <p><a href="images/big-img/folio-img-9.jpg" class="fa fa-search-plus zoom"></a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="center">
+                <a href="categories.html" class="btn-primary wow zoomInUp">See all</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <section id="services" class="hashAncor">
+      <div class="services-indent">
+        <div class="container">
+          <div class="row">
+            <div class="grid_12">
+              <h2 class="heading__color wow zoomInUp">Services</h2>
+              <div class="indent-1 wow zoomInDown">
+                Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+              <div class="services-list">
+                <a href="#" class="service-box service-1 wow zoomInLeft">
+                  <div class="fa fa-clock-o service-icon"></div>
+                  <div class="service-box-indent">
+                    <div class="service-title">
+                      Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod
+                    </div>
+                    <div class="service-description">
+                      Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidi
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="service-box service-2 wow zoomInUp">
+                  <div class="fa fa-thumbs-o-up service-icon"></div>
+                  <div class="service-box-indent">
+                    <div class="service-title">
+                      Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    </div>
+                    <div class="service-description">
+                      Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidi
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="service-box service-3 wow zoomInDown">
+                  <div class="fa fa-weixin service-icon"></div>
+                  <div class="service-box-indent">
+                    <div class="service-title">
+                      Voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                    </div>
+                    <div class="service-description">
+                      Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidi
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="service-box service-4 wow zoomInUp">
+                  <div class="fa fa-coffee service-icon"></div>
+                  <div class="service-box-indent">
+                    <div class="service-title">
+                      proident, sunt in culpa qui officia deserunt mollit anim
+                    </div>
+                    <div class="service-description">
+                      Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidi
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="service-box service-5 wow zoomInRight">
+                  <div class="fa fa-paper-plane service-icon"></div>
+                  <div class="service-box-indent">
+                    <div class="service-title">
+                      ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod
+                    </div>
+                    <div class="service-description">
+                      Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidi
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="service-box service-6 wow zoomInLeft">
+                  <div class="fa fa-laptop service-icon"></div>
+                  <div class="service-box-indent">
+                    <div class="service-title">
+                      reprehenderit in voluptat velit esse cillum dolore eu fugiat nulla pariatur
+                    </div>
+                    <div class="service-description">
+                      Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incidi
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" data-stellar-background-ratio="-0.1" class="hashAncor">
+      <div class="news-indent">
+        <div class="container">
+          <div class="row">
+            <div class="grid_12">
+              <h2 class=" wow zoomInDown">News</h2>
+              <div class="news-box">
+                <time datetime="2015-05-20 19:00" class="wow fadeInLeft"><span>20th</span> February 2015</time>
+                <div class="news-content wow fadeInRight">
+                  <h5><a href="#" class="news-title">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod</a></h5>
+                  Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&nbsp; &nbsp;<a href="#" class="news-link fa fa-angle-double-right"></a>
+                  <ul class="news-links-list">
+                    <li><span class="fa fa-user"></span><a href="#">Admin</a></li>
+                    <li><span class="fa fa-clock-o"></span><a href="#">25/04</a></li>
+                    <li><span class="fa fa-comment-o"></span><a href="#">125</a></li>
+                  </ul>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="news-box box-w-image">
+                <time datetime="2015-05-20 19:00" class="wow fadeInLeft"><span>20th</span> February 2015</time>
+                <div class="news-content hovered_content wow fadeInRight">
+                  <img src="images/news-img.jpg" alt="" class="news-image">
+                  <div class="news-content-indent">
+                    <h5><a href="#" class="news-title">amet conse ctetur adipisicing elit, sed do eiusmod</a></h5>
+                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&nbsp; &nbsp;<a href="#" class="news-link fa fa-angle-double-right"></a>
+                    <ul class="news-links-list">
+                      <li><span class="fa fa-user"></span><a href="#">Admin</a></li>
+                      <li><span class="fa fa-clock-o"></span><a href="#">25/04</a></li>
+                      <li><span class="fa fa-comment-o"></span><a href="#">125</a></li>
+                    </ul>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="news-box">
+                <time datetime="2015-05-20 19:00" class="wow fadeInLeft"><span>20th</span> February 2015</time>
+                <div class="news-content wow fadeInRight">
+                  <h5><a href="#" class="news-title">reprehenderit in voluptate velit esse cillum dolore eu fugiat</a></h5>
+                  Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&nbsp; &nbsp;<a href="#" class="news-link fa fa-angle-double-right"></a>
+                  <ul class="news-links-list">
+                    <li><span class="fa fa-user"></span><a href="#">Admin</a></li>
+                    <li><span class="fa fa-clock-o"></span><a href="#">25/04</a></li>
+                    <li><span class="fa fa-comment-o"></span><a href="#">125</a></li>
+                  </ul>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="align">
+                <a href="#" class="btn-primary  wow zoomInLeft">See all</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" data-stellar-background-ratio="-0.1" class="hashAncor">
+      <div class="container">
+        <div class="contacts-indent">
+          <div class="row">
+            <div class="grid_12">
+              <h2 class="align wow zoomInUp">Contacts</h2>
+              <div id="owl-contact" class="owl-carousel">
+                <div class="address item">
+                  <div class="address-title">
+                    Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod
+                  </div>
+                  <address>Address:  4578 Marmora Road, Glasgow D04 89GR</address>
+                  <ul class="contact-phone">
+                    <li>
+                      <span class="fa fa-phone"></span>800 2345-6789
+                    </li>
+                    <li>
+                      <span class="fa fa-fax"></span>800 2345-6789
+                    </li>
+                  </ul>
+
+                  <ul class="social-contact">
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-google-plus"></a></li>
+                  </ul>
+
+                </div>
+                <div class=" item">
+                  <form id="contact-form">
+                    <div class="contact-form-loader"></div>
+                    <fieldset>
+                      <label class="name">
+                        <input type="text" name="name" placeholder="Name:" value="" data-constraints="@Required @JustLetters"  />
+                        <span class="empty-message">Este campo é obrigatório.</span>
+                        <span class="error-message">This is not a valid name.</span>
+                      </label>
+                      <label class="email">
+                        <input type="text" name="email" placeholder="E-mail:" value="" data-constraints="@Required @Email" />
+                        <span class="empty-message">Este campo é obrigatório.</span>
+                        <span class="error-message">This is not a valid email.</span>
+                      </label>
+                      <label class="message">
+                        <textarea name="message" placeholder="Message:" data-constraints='@Required @Length(min=5,max=999999)'></textarea>
+                        <span class="empty-message">Este campo é obrigatório.</span>
+                        <span class="error-message">The message is too short.</span>
+                      </label>
+                      <div class="buttons">
+                        <a href="#" data-type="reset" class="btn-default" >clear</a>
+                        <a href="#" data-type="submit" class="btn-default">send</a>
+                      </div>
+                    </fieldset>
+                    <div class="modal fade response-message">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Modal title</h4>
+                          </div>
+                          <div class="modal-body">
+                            You message has been sent! We will be in touch soon.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+
+
+  <!--========================================================
+                            FOOTER
+  =========================================================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+      </div>
+    </div>
+  </footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
