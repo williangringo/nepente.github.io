@@ -11,7 +11,6 @@ $(window).load(function() {
 /* OWL Carousel */
 $(document).ready(function() {
   var owl = $("#owl");
-  var owlc = $("#owl-contact");
   var owlt = $(".team-list");
   
   owl.owlCarousel({
@@ -24,17 +23,6 @@ $(document).ready(function() {
     pagination: true
   });
   
-  owlc.owlCarousel({
-    autoPlay: false,
-    items : 1, //10 items above 1000px browser width
-    itemsDesktop : [1000,1], //5 items between 1000px and 901px
-    itemsDesktopSmall : [900,1], // betweem 900px and 601px
-    itemsTablet: [600,1], //2 items between 600 and 0
-    itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
-    pagination: true,
-    mouseDrag : false
-  });
-
   owlt.owlCarousel({
     autoPlay: false,
     items : 6, //10 items above 1000px browser width
