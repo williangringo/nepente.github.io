@@ -68,7 +68,7 @@ $(window).load(function () {
 });
 
 /* Count To */
-function countT(){
+function countT() {
   $(".skill-number").each(function() {
     var $text = $(this);
     var $from = $text.data('from');
@@ -183,12 +183,12 @@ $(document).ready(function() {
 
       return false;
     });
-  };
+  }
 });
 
 
 function folioanimate() {
-  TweenLite.to('.anim', 1, {delay:1, scale:1, ease: Power2.ease});
+  TweenLite.to('.anim', 1, { delay: 1, scale: 1, ease: Power2.ease });
 }
 
 $(window).load(function() {
