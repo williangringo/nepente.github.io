@@ -81,11 +81,11 @@ function countT() {
       currVal = obj.getTextVal();
       endVal = $to;
       TweenLite.to(obj, $speed, { setTextVal: endVal, ease: Power2.ease });
-    };
+    }
     
     animate();
   });
-};
+}
 
 $(window).load(function() {
   if ($('html').hasClass('desktop')) {
@@ -109,7 +109,6 @@ $(document).ready(function () {
 
 /* Copyright Year */
 var now = new Date();
-var currentYear = now.getFullYear();
 $(document).ready(function() {
   $("#copyright-year").text(now.getFullYear());
 });
