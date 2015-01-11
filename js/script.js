@@ -53,11 +53,6 @@ $(window).load(function(){
     }
   }).trigger('resize');
 
-
-  var $spinner = $('.content-load-spinner');
-  setTimeout(function(){
-      $spinner.fadeOut(600);
-  }, 700);
 })
 
 
