@@ -50,7 +50,7 @@ $(document).ready(function() {
 
 /* Video library */
 $(document).ready(function () {
-  $("#home").vide("video/video",{
+  $("#home").vide("video/video", {
     volume: 1,
     playbackRate: 1,
     muted: true,
@@ -60,17 +60,6 @@ $(document).ready(function () {
   });
   
   $('#home video').fadeOut(0).delay(200).fadeIn(800);
-
-  $("#privacy").vide("video/video",{
-    volume: 1,
-    playbackRate: 1,
-    muted: true,
-    loop: true,
-    autoplay: true,
-    position: "50% 50%" // Alignment
-  });
-  
-  $('#privacy video').fadeOut(0).delay(200).fadeIn(800);
 });
 
 /* Touchtouch library */
