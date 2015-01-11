@@ -115,7 +115,7 @@ $(window).load(function () {
 });
 
 /* ToTop */
-$(function () {
+$(document).ready(function () {
   $().UItoTop({ easingType: 'easeOutQuart' });
 });
 
@@ -128,7 +128,7 @@ $(document).ready(function() {
 
 
 /* Orientation tablet fix */
-$(function(){
+$(document).ready(function() {
   // IPad/IPhone
 	var viewportmeta = document.querySelector && document.querySelector('meta[name="viewport"]');
 	var ua = navigator.userAgent;
