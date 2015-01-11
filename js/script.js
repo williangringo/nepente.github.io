@@ -50,11 +50,6 @@ $(document).ready(function () {
   $('#home video').fadeOut(0).delay(50).fadeIn(800);
 });
 
-/* Touchtouch library */
-$(window).load(function () {
-  $('.zoom').touchTouch();
-});
-
 /* Count To */
 function countT() {
   $(".skill-number").each(function() {
