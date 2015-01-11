@@ -59,7 +59,7 @@ $(document).ready(function () {
     position: "50% 50%" // Alignment
   });
   
-  $('#home video').fadeOut(0).delay(200).fadeIn(800);
+  $('#home video').fadeOut(0).delay(50).fadeIn(800);
 });
 
 /* Touchtouch library */
