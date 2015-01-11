@@ -1,20 +1,20 @@
 /* Stellar.js
 ========================================================*/
-$(window).load(function() { 
+$(window).load(function() {
   if ($('html').hasClass('desktop')) {
       $.stellar({
         horizontalScrolling: false,
         verticalOffset: -50
       });
-  }  
+  }
 });
 
 /* OWL Carousel
 ========================================================*/
-$(document).ready(function() { 
-  var owl = $("#owl"); 
-  var owlc = $("#owl-contact"); 
-  var owlt = $(".team-list"); 
+$(document).ready(function() {
+  var owl = $("#owl");
+  var owlc = $("#owl-contact");
+  var owlt = $(".team-list");
   owl.owlCarousel({
     autoPlay: false,
     items : 2, //10 items above 1000px browser width
@@ -23,7 +23,7 @@ $(document).ready(function() {
     itemsTablet: [767,1], //2 items between 600 and 0
     itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
     pagination: true
-  }); 
+  });
   owlc.owlCarousel({
     autoPlay: false,
     items : 1, //10 items above 1000px browser width
@@ -33,7 +33,7 @@ $(document).ready(function() {
     itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
     pagination: true,
     mouseDrag : false
-  }); 
+  });
 
   owlt.owlCarousel({
     autoPlay: false,
@@ -45,7 +45,7 @@ $(document).ready(function() {
     pagination: false,
     mouseDrag : true,
     navigation:true
-  }); 
+  });
 });
 
 /* Video library
@@ -74,7 +74,7 @@ $(document).ready(function () {
 
 /* Touchtouch library
 ========================================================*/
-$(window).load(function () {       
+$(window).load(function () {
   $('.zoom').touchTouch();
 });
 
@@ -104,7 +104,7 @@ function countT(){
     obj.setTextVal($from);
 
     var animate = function() {
-      
+
       currVal = obj.getTextVal();
       endVal = $to;
       TweenLite.to(obj, $speed, {setTextVal: endVal, ease: Power2.ease});
@@ -115,15 +115,15 @@ function countT(){
 
 $(window).load(function(){
   if ($('html').hasClass('desktop')) {
-            $('#statistics').scrollShowTime({onShow: countT})           
+            $('#statistics').scrollShowTime({onShow: countT})
       }else{
         countT();
-      } 
+      }
 })
 
 /* Isotope
 ========================================================*/
-$(document).ready(function() {  
+$(document).ready(function() {
   var $container = $('.folio-block');
   //Run to initialise column sizes
   updateSize();
@@ -133,7 +133,7 @@ $(document).ready(function() {
 
       $container.isotope({
           // options
-          itemSelector : '.folio-thumb',  
+          itemSelector : '.folio-thumb',
           layoutMode: 'masonry',
           transformsEnabled: false,
           columnWidth: function( containerWidth ) {
@@ -141,13 +141,13 @@ $(document).ready(function() {
             }
       });
   });
-    
+
     // update columnWidth on window resize
-  $(window).smartresize(function(){  
+  $(window).smartresize(function(){
       updateSize();
   });
 
-  
+
   //Set item size
   function updateSize() {
     $browserWidth = $container.width();
@@ -169,9 +169,9 @@ $(document).ready(function() {
     $itemWidth = Math.floor($itemWidth);
 
     $(".folio-thumb").each(function(index){
-        $(this).css({"width":$itemWidth+"px"});             
+        $(this).css({"width":$itemWidth+"px"});
     });
-         
+
     var $optionSets = $('.isotope-list'),
         $optionLinks = $optionSets.find('a');
 
@@ -200,35 +200,35 @@ $(document).ready(function() {
         // otherwise, apply new options
         $container.isotope( options );
       }
-      
+
       return false;
-    });   
-    
+    });
+
   };
-      
+
 });
 
-      
+
 function folioanimate(){
       TweenLite.to('.anim', 1, {delay:1, scale:1, ease: Power2.ease});
   };
 
-$(window).load(function(){  
-  if ($('html').hasClass('desktop')) {        
+$(window).load(function(){
+  if ($('html').hasClass('desktop')) {
             TweenLite.to('.anim', 0.1, {delay:0, scale:0, ease: Power2.ease});
-            $('#folio').scrollShowTime({onShow: folioanimate})          
+            $('#folio').scrollShowTime({onShow: folioanimate})
       }else{
         folioanimate();
-      } 
+      }
 })
 
 
 /* Wow js
 ========================================================*/
-$(window).load(function () {       
+$(window).load(function () {
   if ($('html').hasClass('desktop')) {
     new WOW().init();
-  }   
+  }
 });
 
 
@@ -236,7 +236,7 @@ $(window).load(function () {
 
 /* ToTop
 ========================================================*/
-$(function () {   
+$(function () {
   $().UItoTop({ easingType: 'easeOutQuart' });
 });
 
@@ -263,7 +263,7 @@ $(function(){
 			document.addEventListener("gesturestart", gestureStart, false);
 		}
 	};
-	
+
 	scaleFix();
 	// Menu Android
 	if(window.orientation!=undefined){
@@ -280,7 +280,7 @@ $(function(){
        window.location.href = $(this).attr("href");
       }
      );
-    } 
+    }
    })
   }
  }
