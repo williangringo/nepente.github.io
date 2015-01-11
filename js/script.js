@@ -9,53 +9,6 @@ $(window).load(function() {
   }  
 });
 
-
-/* TOOGLE
-========================================================*/
-$(window).load(function(){    
-  var asideState = 'closed';
-  var tabletState = true;
-
-  $(".navbar-toggle").on('click',function(){
-    asideState = 'opened'
-    asideSwitcher('opened');
-  })
-
-  $(".remove-panel").on('click', function(){
-    asideState = 'closed'
-    asideSwitcher('closed');
-  })
-
-  function asideSwitcher(state){
-    switch(state){
-      case 'opened':
-        if(!tabletState){
-          $(".aside-panel").stop().animate({left:"60"},400);
-        }else{
-          $(".aside-panel").stop().animate({left:"0"},400);
-        }
-      break;
-      case 'closed':
-        $(".aside-panel").stop().animate({left:"-290"}, 400);
-      break;
-    }
-  }
-
-  $(window).resize(function(){     
-    if ( $(window).width() < 767) {
-      tabletState = true;
-      asideSwitcher(asideState);
-    }else{
-      tabletState = false;
-      if(asideState=='opened'){
-        $(".aside-panel").stop().animate({left:"60"},400);
-      }
-    }
-  }).trigger('resize');
-
-})
-
-
 /* OWL Carousel
 ========================================================*/
 $(document).ready(function() { 
