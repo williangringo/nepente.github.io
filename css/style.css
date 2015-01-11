@@ -59,9 +59,7 @@ h4 {
   padding-top: 12px;
   padding-bottom: 16px;
 }
-/*========================================================
-                    HEADER styles
-=========================================================*/
+/* HEADER styles */
 .logo {
   position: relative;
   padding: 271px 0 46px 0;
@@ -105,14 +103,11 @@ h4 {
     padding-top: 44px;
   }
 }
-/*========================================================
-                    CONTENT styles
-=========================================================*/
+/* CONTENT styles */
 #content {
   overflow: hidden;
 }
-/* Video section
-========================================================*/
+/* Video section */
 #home {
   padding: 0px 0 240px 0;
   position: relative;
@@ -169,8 +164,7 @@ h2.slogan-title {
     padding: 0;
   }
 }
-/* About section
-========================================================*/
+/* About section */
 #about {
   background: #e9e9e9;
   padding: 28px 0 70px 0;
@@ -219,8 +213,7 @@ h2.slogan-title {
     line-height: 22px;
   }
 }
-/* STATISTICS section
-========================================================*/
+/* STATISTICS section */
 #statistics {
   background: url('../images/statistics-bg.jpg') 0 0;
   text-align: center;
@@ -275,8 +268,7 @@ h2.slogan-title {
     min-height: 240px;
   }
 }
-/* Team section
-========================================================*/
+/* Team section */
 #team {
   background: #e9e9e9;
   padding: 28px 0 0px 0;
@@ -470,8 +462,7 @@ h2.slogan-title {
   font-size: 17px;
   line-height: 25px;
 }
-/* Testimonial section
-========================================================*/
+/* Testimonial section */
 #testimonials {
   background: #eb4f1e;
   position: relative;
@@ -522,8 +513,7 @@ h2.slogan-title {
     margin: 0;
   }
 }
-/* Folio section
-========================================================*/
+/* Folio section */
 .isotope-list {
   margin: 0 auto;
   width: 100%;
@@ -716,8 +706,7 @@ h2.slogan-title {
     height: 87px;
   }
 }
-/* Services section
-========================================================*/
+/* Services section */
 #services {
   text-align: center;
   color: #777777;
@@ -898,8 +887,7 @@ h2.slogan-title {
     background-position: 50% 50%;
   }
 }
-/* Contacts section
-========================================================*/
+/* Contacts section */
 #contacts {
   background: url(../images/contacts-bg.jpg) 50% 50%;
 }
@@ -970,14 +958,11 @@ address {
   margin-top: 160px;
 }
 
-/*========================================================
-                    Widget styles
-=========================================================*/
+/* Widget styles */
 #w {
   height: 900px;
 }
-/* UItoTop styles
-========================================================*/
+/* UItoTop styles */
 #toTop {
   display: none;
   text-decoration: none;
@@ -1004,4 +989,3 @@ address {
     display: none !important;
   }
 }
-/*Core variables and mixins*/
