@@ -714,6 +714,9 @@ h2.slogan-title {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+.align {
+  text-align: center;
+}
 .contacts-indent {
   padding: 20px 0 90px 0;
 }
