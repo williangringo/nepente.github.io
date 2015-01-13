@@ -271,7 +271,7 @@ h2.slogan-title {
 /* Team section */
 #team {
   background: #e9e9e9;
-  padding: 28px 0 0px 0;
+  padding: 28px 0 70px 0;
   text-align: center;
   font-weight: 300;
 }
@@ -281,60 +281,12 @@ h2.slogan-title {
   padding-top: 30px;
   position: relative;
 }
-.team-list.owl-theme .owl-controls {
-  margin-top: 0;
-}
-.team-list.owl-theme .owl-controls {
-  font-size: 50px;
-  color: #000;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-.team-list.owl-theme .owl-controls .owl-prev {
-  top: 50%;
-  left: -80px;
-  margin-top: -25px;
-  position: absolute;
-  opacity: 0;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-.team-list.owl-theme .owl-controls .owl-prev:hover {
-  color: #FAF4F4;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-.team-list.owl-theme .owl-controls .owl-next {
-  top: 50%;
-  right: -80px;
-  margin-top: -25px;
-  position: absolute;
-  opacity: 0;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-.team-list.owl-theme .owl-controls .owl-next:hover {
-  color: #FAF4F4;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-.team-list.owl-theme:hover .owl-prev {
-  left: 80px;
-  opacity: 1;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-.team-list.owl-theme:hover .owl-next {
-  right: 10px;
-  opacity: 1;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
 .thumbnail {
   text-align: center;
-  width: 100%;
+  width: 80%;
   position: relative;
   overflow: hidden;
+  margin: auto
 }
 .thumbnail img {
   width: 100%;

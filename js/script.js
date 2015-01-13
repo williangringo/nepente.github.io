@@ -11,7 +11,6 @@ $(window).load(function() {
 /* OWL Carousel */
 $(document).ready(function() {
   var owl = $("#owl");
-  var owlt = $(".team-list");
   
   owl.owlCarousel({
     autoPlay: false,
@@ -21,18 +20,6 @@ $(document).ready(function() {
     itemsTablet: [767,1], //2 items between 600 and 0
     itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
     pagination: true
-  });
-  
-  owlt.owlCarousel({
-    autoPlay: false,
-    items : 6, //10 items above 1000px browser width
-    itemsDesktop : [1500,5], //5 items between 1000px and 901px
-    itemsDesktopSmall : [1199,4], // betweem 900px and 601px
-    itemsTablet: [979,2], //2 items between 600 and 0
-    itemsMobile : [480,1], // itemsMobile disabled - inherit from itemsTablet option
-    pagination: false,
-    mouseDrag : true,
-    navigation:true
   });
 });
 
