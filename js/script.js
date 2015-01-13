@@ -1,6 +1,8 @@
+var hasClassDesktop = $('html').hasClass('desktop');
+
 /* Stellar.js */
 $(window).load(function() {
-  if ($('html').hasClass('desktop')) {
+  if (hasClassDesktop) {
     $.stellar({
       horizontalScrolling: false,
       verticalOffset: -50
@@ -41,7 +43,7 @@ $(document).ready(function () {
 
 /* Wow js */
 $(window).load(function () {
-  if ($('html').hasClass('desktop')) {
+  if (hasClassDesktop) {
     new WOW().init();
   }
 });
@@ -50,13 +52,6 @@ $(window).load(function () {
 $(document).ready(function () {
   $().UItoTop({ easingType: 'easeOutQuart' });
 });
-
-/* Copyright Year */
-var now = new Date();
-$(document).ready(function() {
-  $("#copyright-year").text(now.getFullYear());
-});
-
 
 /* Orientation tablet fix */
 $(document).ready(function() {
