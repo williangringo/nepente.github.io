@@ -9,6 +9,7 @@ $(window).load(function() {
 });
 
 /* OWL Carousel */
+/*
 $(document).ready(function() {
   var owl = $("#owl");
   
@@ -22,6 +23,7 @@ $(document).ready(function() {
     pagination: true
   });
 });
+*/
 
 /* Video library */
 $(document).ready(function () {
