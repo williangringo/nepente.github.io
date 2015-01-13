@@ -408,57 +408,6 @@ h2.slogan-title {
   font-size: 17px;
   line-height: 25px;
 }
-/* Testimonial section */
-#testimonials {
-  background: #eb4f1e;
-  position: relative;
-}
-.testimonials-indent {
-  padding: 79px 0 76px 0;
-}
-.blockquote {
-  padding: 10px 0 10px 0;
-}
-.blockquote img {
-  float: left;
-  margin-right: 30px;
-}
-.blockquote blockquote {
-  float: left;
-  width: 300px;
-  padding: 20px 0 0 0;
-  font-size: 17px;
-  line-height: 25px;
-  color: #fff;
-  font-weight: 300;
-}
-.blockquote blockquote span {
-  font-size: 19px;
-  line-height: 25px;
-  display: block;
-  padding-top: 20px;
-  text-transform: uppercase;
-  font-weight: normal;
-}
-.blockquote.grid_6 {
-  margin-left: 0 !important;
-}
-.blockquote-img {
-  text-align: center;
-  padding-bottom: 40px;
-}
-@media only screen and (max-width: 1199px) {
-  .blockquote blockquote {
-    width: 100%;
-  }
-  .blockquote {
-    text-align: center;
-  }
-  .blockquote img {
-    float: none;
-    margin: 0;
-  }
-}
 /* Services section */
 #services {
   text-align: center;
