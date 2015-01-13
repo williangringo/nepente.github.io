@@ -716,27 +716,21 @@ h2.slogan-title {
 .contacts-indent {
   padding: 20px 0 90px 0;
 }
-.address {
+.contact {
   text-align: center;
   padding-bottom: 190px;
 }
-.address-title {
+.contact-text {
   color: #eb4f1e;
   font-size: 19px;
   line-height: 30px;
   font-weight: normal;
-  padding: 20px 0 46px 0;
+  padding: 20px 0 0 0;
 }
-address {
-  font-weight: 300;
-  font-size: 17px;
-  line-height: 22px;
-  color: #777777;
+.contact-mail {
+  padding: 20px 0 85px 50px;
 }
-.contact-phone {
-  padding: 20px 0 74px 50px;
-}
-.contact-phone li {
+.contact-mail li {
   font-size: 34px;
   line-height: 40px;
   font-weight: 300;
@@ -744,7 +738,7 @@ address {
   display: inline-block;
   padding-right: 40px;
 }
-.contact-phone li span {
+.contact-mail li span {
   font-size: 24px;
   line-height: 24px;
   color: #eb4f1e;
@@ -754,7 +748,7 @@ address {
   top: 10px;
 }
 @media only screen and (max-width: 479px) {
-  .contact-phone li {
+  .contact-mail li {
     font-size: 22px;
     line-height: 44px;
   }
