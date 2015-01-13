@@ -62,18 +62,14 @@ h4 {
 /* HEADER styles */
 .logo {
   position: relative;
-  padding: 271px 0 46px 0;
+  padding: 170px 0 46px 0;
   text-align: center;
   z-index: 2;
 }
 .logo a {
   text-decoration: none;
   color: #fff;
-  background: #eb4f1e;
   display: inline-block;
-  border-radius: 500%;
-  width: 570px;
-  height: 270px;
   font-weight: bold;
   font-size: 100px;
   line-height: 110px;
@@ -95,8 +91,6 @@ h4 {
   }
   .logo a {
     padding-top: 40px;
-    width: 150px;
-    height: 150px;
     font-size: 50px;
     line-height: 60px;
     letter-spacing: -2px;
@@ -109,7 +103,7 @@ h4 {
 }
 /* Video section */
 #home {
-  padding: 0px 0 240px 0;
+  padding: 0px 0 150px 0;
   position: relative;
   text-align: center;
 }
