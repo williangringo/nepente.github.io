@@ -1,6 +1,7 @@
 /* Stellar.js */
 $(window).load(function() {
   if ($('html').hasClass('desktop')) {
+    console.log('svfsdtyu');
     $.stellar({
       horizontalScrolling: false,
       verticalOffset: -50
