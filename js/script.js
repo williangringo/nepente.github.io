@@ -39,46 +39,6 @@ $(document).ready(function () {
   $('#home video').fadeOut(0).delay(50).fadeIn(800);
 });
 
-/* Count To */
-function countT() {
-  $(".skill-number").each(function() {
-    var $text = $(this);
-    var $from = $text.data('from');
-    var $to = $text.data('to');
-    var $speed = $text.data('speed');
-    var currVal = 0;
-    var endVal = 0;
-    var obj = {};
-
-    obj.getTextVal = function() {
-      return $from;
-    };
-
-    obj.setTextVal = function(val) {
-      currVal = parseInt(val, 10);
-      $text.text(currVal);
-    };
-
-    obj.setTextVal($from);
-
-    function animate() {
-      currVal = obj.getTextVal();
-      endVal = $to;
-      TweenLite.to(obj, $speed, { setTextVal: endVal, ease: Power2.ease });
-    }
-    
-    animate();
-  });
-}
-
-$(window).load(function() {
-  if ($('html').hasClass('desktop')) {
-    $('#statistics').scrollShowTime({ onShow: countT });
-  } else {
-    countT();
-  }
-});
-
 /* Wow js */
 $(window).load(function () {
   if ($('html').hasClass('desktop')) {
