@@ -547,7 +547,7 @@ h2.slogan-title {
   transition: all 0.2s ease;
 }
 .service-icon {
-  font-size: 117px;
+  font-size: 117px !important;
   line-height: 120px;
   color: #fff;
   position: absolute;
