@@ -11,6 +11,7 @@ $(window).load(function() {
 });
 
 /* Video library */
+/*
 $(document).ready(function () {
   $("#home").vide("video/video", {
     volume: 1,
@@ -23,7 +24,7 @@ $(document).ready(function () {
   
   $('#home video').fadeOut(0).delay(50).fadeIn(800);  
 });
-
+*/
 /* Wow js */
 $(window).load(function () {
   if (hasClassDesktop) {
