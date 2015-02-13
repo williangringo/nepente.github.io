@@ -134,10 +134,13 @@ h4 {
 }
 /* Video section */
 #home {
-  padding: 0px 0 150px 0;
-  position: relative;
+  background: url("../images/hero.jpg") no-repeat;
+  background-position: center 35%;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: table;
   text-align: center;
-  background: url("../images/hero.jpg") 0% 40% no-repeat;
 }
 .video-overlay {
   position: absolute;
