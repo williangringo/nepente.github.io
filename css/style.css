@@ -139,8 +139,7 @@ h4 {
   padding: 0px 0 150px 0;
   position: relative;
   text-align: center;
-  background: url("../images/hero.jpg") no-repeat;
-  background-size: 100%;
+  background: url("../images/hero.jpg") 0% 40% no-repeat;
 }
 .video-overlay {
   position: absolute;
