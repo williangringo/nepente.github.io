@@ -2,9 +2,9 @@
   font-family: 'nepente';
   src:url('../fonts/nepente.eot?-nep94v');
   src:url('../fonts/nepente.eot?#iefix-nep94v') format('embedded-opentype'),
-    url('../fonts/nepente.woff?-nep94v') format('woff'),
-    url('../fonts/nepente.ttf?-nep94v') format('truetype'),
-    url('../fonts/nepente.svg?-nep94v#icomoon') format('svg');
+  url('../fonts/nepente.woff?-nep94v') format('woff'),
+  url('../fonts/nepente.ttf?-nep94v') format('truetype'),
+  url('../fonts/nepente.svg?-nep94v#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -204,6 +204,12 @@ h2.slogan-title {
   color: #777777;
   font-weight: 300;
 }
+#about ul{
+  list-style-type: none;
+}
+#about ul li {
+  padding-top:20px;
+}
 .about-indent {
   padding: 25px;
 }
@@ -255,12 +261,27 @@ h2.slogan-title {
   text-align: center;
   padding: 34px 0 70px 0;
 }
+
+#statistics h3{
+  color:#fff;
+  background-color: rgba(255, 0, 0, 0.49);
+  display: inline;
+  padding: 10px 120px;
+}
+
+#statistics h4{
+  padding-bottom: 50px;
+}
+
 .statistics-indent {
   padding: 0 60px;
   font-weight: 300;
 }
+.statistics-text{
+  font-size:1.2em;
+}
 .box-1 {
-  background: rgba(33, 33, 33, 0.95);
+  color: #fff;
   text-align: center;
   padding: 55px 0 25px 0;
   margin-top: 34px;
@@ -269,11 +290,13 @@ h2.slogan-title {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.box-1:hover .skill-number, .box-1:hover .skill-title{
+  color:rgba(255, 0, 0, 0.49);
+}
 .skill-number {
-  font-size: 65px;
+  font-size: 4em;
   line-height: 71px;
   font-weight: 300;
-  color: #fff;
   display: block;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -286,6 +309,9 @@ h2.slogan-title {
   display: block;
   text-transform: uppercase;
   padding-top: 14px;
+}
+.skill-title:hover{
+  color:rgba(255, 0, 0, 0.49);
 }
 .box-1__active {
   background: rgba(235, 79, 30, 0.8);
@@ -310,6 +336,17 @@ h2.slogan-title {
   padding: 28px 0 70px 0;
   text-align: center;
   font-weight: 300;
+  color: #777;
+}
+#team h3{
+  background-color: rgba(119, 119, 119, 0.65);
+  color: #FFF;
+  display: inline;
+  padding: 10px 60px;
+}
+.team-text{
+  padding-top:40px;
+  font-size:1.2em;
 }
 .team-list {
   overflow: hidden;
@@ -322,7 +359,8 @@ h2.slogan-title {
   width: 80%;
   position: relative;
   overflow: hidden;
-  margin: auto
+  margin: auto;
+  padding-top: 50px;
 }
 .thumbnail img {
   width: 100%;
@@ -364,6 +402,7 @@ h2.slogan-title {
   text-decoration: none;
   color: #fff;
   font-size: 19px;
+  font-weight: bold;
   line-height: 22px;
   display: inline-block;
   position: relative;
@@ -423,8 +462,8 @@ h2.slogan-title {
   transition: all 0.2s ease;
 }
 .social-contact li a:hover {
-  background: #eb4f1e;
-  border-color: #eb4f1e;
+  background: #2E22F5;
+  border-color: #2E22F5;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -459,12 +498,19 @@ h2.slogan-title {
   font-weight: 300;
   background: #f5f5f5;
 }
+#services h3{
+  color: #000;
+  display: inline;
+  padding: 10px 85px;
+  font-weight: unset;
+}
 .services-indent {
   padding: 34px 0 70px 0;
 }
-.indent-1 {
-  padding: 0 60px 40px 60px;
+.services-text{
+  padding: 25px 0px 50px 0;
 }
+
 .service-list {
   overflow: hidden;
   width: 100%;
@@ -515,7 +561,7 @@ h2.slogan-title {
   transition: all 0.2s ease;
 }
 .service-1 {
-  background: #eb4f1e;
+  background: url(../images/service-1-bg.jpg) 0 0;
 }
 .service-1:hover .service-icon,
 .service-1:hover .service-title,
@@ -525,7 +571,7 @@ h2.slogan-title {
   transition: all 0.2s ease;
 }
 .service-2 {
-  background: #939393;
+  background: rgba(0, 143, 3, 0.75);
 }
 .service-2:hover .service-icon,
 .service-2:hover .service-title,
@@ -535,17 +581,10 @@ h2.slogan-title {
   transition: all 0.2s ease;
 }
 .service-3 {
-  background: #e9e9e9;
+  background: rgba(96, 126, 255, 0.75);
 }
 .service-3 .service-icon {
-  color: #bababa;
   left: 58px;
-}
-.service-3 .service-title {
-  color: #333333;
-}
-.service-3 .service-description {
-  color: #777777;
 }
 .service-3:hover .service-icon,
 .service-3:hover .service-title,
@@ -559,26 +598,20 @@ h2.slogan-title {
 }
 .service-4 .service-icon {
   left: 58px;
+  color: #fff;
 }
 .service-4:hover .service-icon,
 .service-4:hover .service-title,
 .service-4:hover .service-description {
-  color: #eb4f1e;
+  color: #000;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 .service-5 {
-  background: #fff;
+  background: url(../images/service-5-bg.jpg) 0 0;
 }
 .service-5 .service-icon {
   left: 64px;
-  color: #eb4f1e;
-}
-.service-5 .service-title {
-  color: #eb4f1e;
-}
-.service-5 .service-description {
-  color: #777777;
 }
 .service-5:hover .service-icon,
 .service-5:hover .service-title,
@@ -588,7 +621,7 @@ h2.slogan-title {
   transition: all 0.2s ease;
 }
 .service-6 {
-  background: #000;
+  background: rgba(235, 79, 30, 0.75);
 }
 .service-6 .service-icon {
   left: 60px;
@@ -596,7 +629,7 @@ h2.slogan-title {
 .service-6:hover .service-icon,
 .service-6:hover .service-title,
 .service-6:hover .service-description {
-  color: #eb4f1e;
+  color: #000;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -635,6 +668,13 @@ h2.slogan-title {
 #contacts {
   background: url(../images/contacts-bg.jpg) 50% 50%;
 }
+#contacts h3 {
+  color: #fff;
+  background-color: rgba(1, 29, 148, 0.6);
+  display: inline;
+  padding: 10px 85px;
+  font-weight: unset;
+}
 #contacts .social-contact {
   text-align: center;
   overflow: hidden;
@@ -662,7 +702,7 @@ h2.slogan-title {
   padding-bottom: 190px;
 }
 .contact-text {
-  color: #eb4f1e;
+  color: #fff;
   font-size: 19px;
   line-height: 30px;
   text-transform: uppercase;
@@ -683,7 +723,7 @@ h2.slogan-title {
 .contact-mail li span {
   font-size: 24px;
   line-height: 24px;
-  color: #eb4f1e;
+  color: #E1B703;;
   display: inline-block;
   position: relative;
   left: -10px;
