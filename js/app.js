@@ -7,7 +7,7 @@
     var opcoes = {
       typeSpeed: 50,
       deleteSpeed: 50,
-      pauseDelay: 1500,
+      pauseDelay: 2000,
       loop: true,
       postfix: ''
     };
