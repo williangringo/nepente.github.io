@@ -1,7 +1,7 @@
 (function() {
   "use strict";
 
-  function m() {
+  function configurarEfeitoMalarkey() {
     var elemento = document.querySelectorAll('.malarkey')[0];
 
     var opcoes = {
@@ -21,6 +21,6 @@
       .type('confeccionando').pause().delete();
   };
 
-  m();
+  configurarEfeitoMalarkey();
 
 }());
