@@ -253,7 +253,7 @@ h2.slogan-title {
 }
 
 .about-icon {
-  color: #777777;
+  color: #777;
 }
 
 .btn-default {
@@ -347,13 +347,13 @@ h2.slogan-title {
   display: block;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  color: #BBB;
+  color: #fff;
 }
 
 .skill-title {
   font-size: 19px;
   line-height: 31px;
-  color: #AAA;
+  color: #fff;
   font-weight: normal;
   display: block;
   text-transform: uppercase;
@@ -843,4 +843,13 @@ h2.slogan-title {
   #toTop {
     display: none !important;
   }
+}
+
+/* Quotes section */
+#quotes {
+  background: #a2a2a2;
+  padding: 28px 0 70px 0;
+  text-align: center;
+  font-weight: 300;
+  color: #000;
 }
