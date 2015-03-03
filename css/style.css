@@ -791,7 +791,7 @@ h2.slogan-title {
   line-height: 40px;
   font-weight: 300;
   color: #fff;
-  display: inline-block;
+  padding-top: 20px;
   padding-right: 40px;
 }
 .contact-mail li span {
