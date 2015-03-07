@@ -2,6 +2,12 @@
   font-size: 0.85em;
 }
 
+@media only screen and (min-width: 40.063em) {
+  .malarkey {
+    font-size: 1em;
+  }
+}
+
 .malarkey::after {
   content: '|';
   position: relative;
