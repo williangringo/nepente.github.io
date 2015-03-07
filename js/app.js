@@ -35,10 +35,10 @@
     type('confeccionando').pause().delete();
   }
 
-  //$(document).ready(startToTop);
   $(document).ready(startMalarkey);
 
   if (!isSmallScreen) {
+    $(document).ready(startToTop);
     $(document).ready(startStellar);
     $(document).ready(startWow);
   }

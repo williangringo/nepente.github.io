@@ -3,18 +3,47 @@
   src: url("../fonts/Existence-Light.otf") format("opentype");
 }
 
-body, h3, h4 {
+* {
+  -webkit-text-size-adjust: none;
+}
+
+body, h1, h2, h3, h4, p, span, blockquote, cite {
+  font-family: inherit;
+  color: inherit;
+}
+
+body {
   font-family: 'Lato', sans-serif;
 }
 
-a,
-a:hover {
-  color: inherit;
+a, a:hover {
   text-decoration: none;
+  color: inherit;
 }
 
-* {
-  -webkit-text-size-adjust: none;
+section {
+  padding: 60px 0px;
+}
+
+h3 {
+  font-size: 2.2em;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.7em;
+}
+
+h3, h4, p, span {
+  font-weight: 300;
+}
+
+h4, p {
+  margin-bottom: 40px;
+}
+
+p, span {
+  font-size: 1.3em;
 }
 
 .valign {
@@ -32,14 +61,14 @@ a:hover {
 }
 
 .value .value-icon {
-  color: rgba(235, 79, 30, 1.0);
-  font-size: 4em;
+  font-size: 4.5em;
+  margin-bottom: 15px;
 }
 
 .value .value-title {
-  color: rgba(119, 119, 119, 1.0);
   text-transform: uppercase;
   font-size: 1.2em;
+  display: inline-block;
 }
 
 #toTop {
@@ -69,6 +98,8 @@ a:hover {
   background: url("../images/hero.jpg") no-repeat;
   background-position: center;
   background-size: cover;
+  font-family: Existence-Light;
+  color: rgba(255, 255, 255, 1.0);
 }
 
 #hero .logo {
@@ -83,50 +114,37 @@ a:hover {
   font-size: 2em;
 }
 
-#hero,
-#hero .title,
-#hero .subtitle {
-  font-family: Existence-Light;
-  color: rgb(255, 255, 255);
+#about {
+  background: rgba(233, 233, 233, 1.0);}
+
+#about h3 {
+  color: rgba(235, 79, 30, 1.0);
 }
 
-#about {
-  background: rgba(233, 233, 233, 1.0);
-  color: rgba(119, 119, 119, 1.0);
+#about h4 {
+  color: rgba(0, 0, 0, 1.0);
+}
+
+#about .value .value-icon {
+  color: rgba(235, 79, 30, 1.0);
 }
 
 #services {
-  color: rgba(119, 119, 119, 1.0);
   background: rgba(245, 245, 245, 1.0);
 }
 
 #services .service-box {
-  padding: 20px 15px 5px 15px;
-}
-
-#services .service-box:hover .service-icon,
-#services .service-box:hover .service-title,
-#services .service-box:hover .service-description {
-  color: rgba(0, 0, 0, 1.0);
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  color: rgba(255, 255, 255, 1.0);
 }
 
 #services .service-box .service-icon {
-  font-size: 5.5em;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  font-size: 4em;
 }
 
 #services .service-box .service-title {
+  font-size: 1.8em;
+  font-weight: 400;
   text-transform: uppercase;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-#services .service-box .service-description {
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
 }
 
 #services .service-box.service-box-desenvolvimento-destaque {
@@ -154,9 +172,14 @@ a:hover {
 }
 
 #community {
+  color: rgba(255, 255, 255, 1.0);
   background: url('../images/statistics-bg.jpg');
   background-position: center;
   background-size: cover;
+}
+
+#community h3 {
+  background-color: rgba(255, 0, 0, 0.49);
 }
 
 #community .value .value-title {
@@ -165,7 +188,6 @@ a:hover {
 
 #team {
   background: rgba(233, 233, 233, 1.0);
-  padding: 28px 0 70px 0;
   font-weight: 300;
   color: rgba(119, 119, 119, 1.0);
 }
@@ -186,24 +208,36 @@ a:hover {
 }
 
 #team .team-list .team-member .team-member-link {
+  position: relative;
+  top: -50px;
   display: inline-block;
-  color: rgba(0, 0, 0, 1.0);
-  font-weight: bold;
+  color: rgba(255, 255, 255, 1.0);
   text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.3em;
 }
 
 #team .team-list .team-member .team-member-contact li a {
+  position: relative;
+  top: -20px;
   font-size: 2.3em;
 }
 
 #quotes {
+  height: 100%;
   background: rgba(162, 162, 162, 1.0);
+  color: rgba(255, 255, 255, 1.0);
 }
 
-#contacts {
-  background: url(../images/contacts-bg.jpg) 50% 50%;
-  background-position: center;
-  background-size: cover;
+#quotes blockquote {
+  margin-top: 20px;
+  font-size: 1.65em;
+  font-weight: 400;
+}
+
+#quotes blockquote cite {
+  color: rgba(255, 255, 255, 1.0);
+  font-size: 0.7em;
 }
 
 @media only screen and (min-width: 40.063em) {
@@ -217,5 +251,34 @@ a:hover {
 
   #services .service-box {
     height: 250px;
+  }
+
+  #services .service-box:hover .service-icon,
+  #services .service-box:hover .service-title,
+  #services .service-box:hover .service-description {
+    color: rgba(0, 0, 0, 1.0);
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+
+  #services .service-box .service-icon {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+
+  #services .service-box .service-title {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+
+  #services .service-box .service-description {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+
+  #contacts {
+    background: url(../images/contacts-bg.jpg) 50% 50%;
+    background-position: center;
+    background-size: cover;
   }
 }
