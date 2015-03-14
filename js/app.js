@@ -21,7 +21,7 @@
     var options = {
       typeSpeed: 50,
       deleteSpeed: 50,
-      pauseDelay: 2000,
+      pauseDelay: 1500,
       loop: true,
       postfix: ''
     };
