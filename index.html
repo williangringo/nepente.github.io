@@ -259,8 +259,30 @@ Estamos esperando você! :)
       </div>
     </div>
     <div class="row">
+      <form>
+        <div class="columns medium-8 medium-centered">
+          <input type="text" name="nome" placeholder="Seu nome, por favor" empty-validation>
+        </div>
+        <div class="columns medium-8 medium-centered">
+          <input type="text" name="email" placeholder="Um e-mail para contato" empty-validation>
+        </div>
+        <div class="columns medium-8 medium-centered">
+          <select empty-validation>
+            <option disabled>Qual o assunto?</option>
+            <option value="" selected>Um novo projeto</option>
+            <option value="">Dúvidas</option>
+            <option value="">Sugestões</option>
+          </select>
+        </div>
+        <div class="columns medium-8 medium-centered">
+          <textarea name="texto" rows="5" placeholder="Como podemos lhe ajudar?" empty-validation></textarea>
+        </div>
+      </form>
+      <button class="success">Contate-nos!</button>
+    </div>
+    <div class="row">
       <div class="columns medium-12">
-        <ul class="value small-block-grid-3 medium-block-grid-5 text-center">
+        <ul class="value small-block-grid-3 medium-block-grid-5 text-center social-links">
           <li><a href="https://twitter.com/nepente_io" target="_blank" class="value-icon fa fa-twitter"></a></li>
           <li><a href="https://github.com/nepente" target="_blank" class="value-icon fa fa-github"></a></li>
           <li><a href="https://plus.google.com/104378205661701738018" rel="publisher" target="_blank" class="value-icon fa fa-google-plus"></a></li>

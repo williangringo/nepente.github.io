@@ -278,6 +278,10 @@ p, span {
   font-size: 3em;
 }
 
+#contact .social-links {
+  margin-top: 50px;
+}
+
 .footer {
   background: rgba(34, 34, 34, 1.0);
   color: rgba(255, 255, 255, 1.0);
