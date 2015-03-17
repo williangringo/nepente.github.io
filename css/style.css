@@ -49,7 +49,6 @@ p, span {
 .valign {
   display: table;
   width: 100%;
-  height: 100%;
 }
 
 .valign > div {
@@ -276,6 +275,16 @@ p, span {
 
 #contact .value .value-icon {
   font-size: 3em;
+}
+
+.footer {
+  background: rgba(34, 34, 34, 1.0);
+  color: rgba(255, 255, 255, 1.0);
+  height: 60px;
+}
+
+.footer .essence {
+  line-height: 2em;
 }
 
 @media only screen and (min-width: 40.063em) {
