@@ -46,6 +46,10 @@ p, span {
   font-size: 1.3em;
 }
 
+select {
+  -moz-appearance: none;
+}
+
 .valign {
   display: table;
   width: 100%;
