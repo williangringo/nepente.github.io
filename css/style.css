@@ -74,6 +74,10 @@ select {
   display: inline-block;
 }
 
+[data-abide] small.error {
+  background: #EB4F1E;
+}
+
 #toTop {
   display: none;
   text-decoration: none;

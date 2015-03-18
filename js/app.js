@@ -35,6 +35,7 @@
     type('confeccionando').pause().delete();
   }
 
+  $(document).foundation();
   $(document).ready(startMalarkey);
 
   if (!isSmallScreen) {
