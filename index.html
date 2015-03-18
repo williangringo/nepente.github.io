@@ -7,9 +7,10 @@ __    _  _______  _______  _______  __    _  _______  _______
 | | |   ||   |___ |   |    |   |___ | | |   |  |   |  |   |___
 |_|  |__||_______||___|    |_______||_|  |__|  |___|  |_______|
 
+
+
 Curioso para conhecer um pouco mais de nossos serviços?
 Entre em contato conosco para trocarmos algumas ideias: ola@nepente.io
-
 Estamos esperando você! :)
 
 -->
@@ -261,21 +262,21 @@ Estamos esperando você! :)
     <div class="row">
       <form>
         <div class="columns medium-8 medium-centered">
-          <input type="text" name="nome" placeholder="Seu nome, por favor" empty-validation>
+          <input type="text" name="nome" placeholder="Seu nome, por favor" required>
         </div>
         <div class="columns medium-8 medium-centered">
-          <input type="text" name="email" placeholder="Um e-mail para contato" empty-validation>
+          <input type="text" name="email" placeholder="Um e-mail para contato" required>
         </div>
         <div class="columns medium-8 medium-centered">
-          <select empty-validation>
+          <select required>
             <option disabled>Qual o assunto?</option>
             <option value="" selected>Um novo projeto</option>
-            <option value="">Dúvidas</option>
-            <option value="">Sugestões</option>
+            <option value="">Dúvidas sobre como trabalhamos</option>
+            <option value="">Críticas e elogios</option>
           </select>
         </div>
         <div class="columns medium-8 medium-centered">
-          <textarea name="texto" rows="5" placeholder="Como podemos lhe ajudar?" empty-validation></textarea>
+          <textarea name="texto" rows="5" placeholder="Como podemos lhe ajudar?" required></textarea>
         </div>
       </form>
       <button class="success">Contate-nos!</button>
@@ -298,6 +299,12 @@ Estamos esperando você! :)
     </div>
   </footer>
 </section>
+
+<script charset="utf-8">
+  $("[empty-validation]").on("blur", function() {
+
+  })
+</script>
 
 <script src="js/media.match.min.js"></script>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
