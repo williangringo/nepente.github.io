@@ -242,7 +242,7 @@ select {
   color: rgba(255, 255, 255, 1.0);
   text-transform: uppercase;
   font-weight: normal;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 #team .team-list .team-member .team-member-contact li a {
@@ -386,4 +386,10 @@ select {
   #services .service-box {
     height: 250px;
   }
+}
+
+.circular{
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
 }
