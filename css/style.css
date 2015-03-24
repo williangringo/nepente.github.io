@@ -236,10 +236,10 @@ select {
 }
 
 #team .team-list .team-member .team-member-link {
-  position: relative;
-  top: -50px;
+  margin-bottom: 40px;
+margin-top: 30px;
   display: inline-block;
-  color: rgba(255, 255, 255, 1.0);
+  color: rgba(119, 119, 119, 1.0);
   text-transform: uppercase;
   font-weight: normal;
   font-size: 1.2em;
