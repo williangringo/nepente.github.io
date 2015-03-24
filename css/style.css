@@ -337,14 +337,6 @@ margin-top: 30px;
     font-size: 3em;
   }
 
-  #services .service-box:hover .service-icon,
-  #services .service-box:hover .service-title,
-  #services .service-box:hover .service-description {
-    color: rgba(0, 0, 0, 1.0);
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-  }
-
   #services .service-box .service-icon {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
