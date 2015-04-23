@@ -3,6 +3,40 @@
 
   var isSmallScreen = !window.matchMedia('only screen and (min-device-width: 641px)').matches;
 
+  function clearFormElements(ele) {
+	    $(ele).find(':input').each(function() {
+	        switch(this.type) {
+	            case 'password':
+	            case 'select-multiple':
+	            case 'select-one':
+	            case 'text':
+              case 'email':
+	            case 'textarea':
+	                $(this).val('');
+	                break;
+	            case 'checkbox':
+	            case 'radio':
+	                this.checked = false;
+	        }
+	    });
+	}
+
+  function startEmail() {
+    var frmContato = $('#frmContato');
+    frmContato.on('submit', function(evt) {
+      evt.preventDefault();
+      enviarEmail(frmContato.nome, frmContato.email, frmContato.assunto, frmContato.texto).done(function() {
+        clearFormElements(frmContato);
+        $('#msgContato').text('Obrigado pelo contato. Em breve retornaremos seu e-mail.');
+        $('#msgContato').show();
+      }).fail(function() {
+        $('#msgContato').text('Houve um erro ao enviar o e-mail. Tente novamente mais tarde.');
+        $('#msgContato').show();
+      });
+      return false;
+    });
+  }
+
   function startToTop() {
     $().UItoTop({ easingType: 'easeOutQuart' });
   }
@@ -36,6 +70,7 @@
   }
 
   $(document).foundation();
+  $(document).ready(startEmail);
   $(document).ready(startMalarkey);
 
   if (!isSmallScreen) {

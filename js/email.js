@@ -1,10 +1,6 @@
-(function() {
-  function enviarEmail(nomeDeOrigem, emailDeOrigem, assunto, texto, cbDeSucesso, cbDeErro) {
-
-    var sucesso = cbDeSucesso || {};
-    var erro = cbDeErro || {};
-
-    $.ajax({
+(function(global) {
+  function enviarEmail(nomeDeOrigem, emailDeOrigem, assunto, texto) {
+    return $.ajax({
       type: 'POST',
       url: 'https://mandrillapp.com/api/1.0/messages/send.json',
       data: {
@@ -22,9 +18,9 @@
             }
           ]
         }
-      },
-      success: sucesso,
-      error: erro
+      }
     });
   }
-}());
+
+  global.enviarEmail = enviarEmail;
+})(window || this);

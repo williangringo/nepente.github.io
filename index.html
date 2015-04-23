@@ -229,7 +229,7 @@ Estamos esperando você! :)
               <li><a href="https://twitter.com/limafelipe92" target="_blank" class="fa fa-twitter"></a></li>
               <li><a href="https://github.com/limafelipe" target="_blank" class="fa fa-github"></a></li>
               <li><a href="https://www.linkedin.com/in/felipelima92" target="_blank" class="fa fa-linkedin"></a></li>
-            <li></li>
+              <li></li>
             </ul>
           </li>
         </ul>
@@ -269,8 +269,8 @@ Estamos esperando você! :)
         </ul>
       </div>
     </div>
-    <div class="row">
-      <form data-abide>
+    <form id="frmContato" data-abide>
+      <div class="row">
         <div class="columns medium-8 medium-centered">
           <input type="text" name="nome" placeholder="Seu nome, por favor" required pattern="[a-zA-Z]+">
           <small class="error">Você esqueceu de nos dizer seu nome. :(</small>
@@ -280,7 +280,7 @@ Estamos esperando você! :)
           <small class="error">Ooops. Precisamos do seu e-mail para entrar em contato.</small>
         </div>
         <div class="columns medium-8 medium-centered">
-          <select required>
+          <select name="assunto" required>
             <option value="">Qual o assunto?</option>
             <option value="novo-projeto">Um novo projeto</option>
             <option value="duvidas-trabalho">Dúvidas sobre como trabalhamos</option>
@@ -292,9 +292,14 @@ Estamos esperando você! :)
           <textarea name="texto" rows="5" placeholder="Como podemos lhe ajudar?" required></textarea>
           <small class="error">Falta pouco. Escreva algumas linhas para que possamos iniciar essa aventura.</small>
         </div>
-      </form>
-      <button>Contate-nos!</button>
-    </div>
+      </div>
+      <div class="row">
+        <button id="btnContato">Contate-nos!</button>
+      </div>
+      <div class="row">
+        <span id="msgContato" sytle="display:none;"></span>
+      </div>
+    </form>
     <div class="row">
       <div class="columns medium-12">
         <ul class="value small-block-grid-3 medium-block-grid-5 text-center social-links">
