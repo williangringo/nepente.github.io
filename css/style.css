@@ -1,8 +1,3 @@
-@font-face {
-  font-family: "Existence-Light";
-  src: url("../fonts/Existence-Light.otf") format("opentype");
-}
-
 * {
   -webkit-text-size-adjust: none;
 }
@@ -106,7 +101,6 @@ select {
   background: linear-gradient(to bottom, rgba(84,35,37,0.8) 100%, rgba(84,35,37,0.8) 100%), url("../images/hero-1000.jpg") no-repeat;
   background-position: center;
   background-size: cover;
-  font-family: Existence-Light;
   color: rgba(255, 255, 255, 1.0);
 }
 
