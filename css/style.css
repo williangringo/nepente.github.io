@@ -110,16 +110,9 @@ select {
   color: rgba(255, 255, 255, 1.0);
 }
 
-#hero .logo {
-  font-size: 6em;
-}
-
-#hero .title {
-  font-size: 4em;
-}
-
-#hero .subtitle {
-  font-size: 2em;
+#hero img {
+  width: 100%;
+  max-width: 800px;
 }
 
 #about {
