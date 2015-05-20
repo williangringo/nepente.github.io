@@ -29,10 +29,6 @@ h2 {
   font-size: 1.7em;
 }
 
-h1, h2, p, span {
-  font-weight: 300;
-}
-
 h2, p {
   margin-bottom: 40px;
 }
@@ -186,7 +182,6 @@ select {
 
 #team {
   background: rgba(233, 233, 233, 1.0);
-  font-weight: 300;
   color: rgba(119, 119, 119, 1.0);
 }
 
