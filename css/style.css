@@ -24,7 +24,6 @@ section {
   font-size: 2.2em;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4A311F;
 }
 
 .subtitulo {
@@ -111,21 +110,12 @@ select {
   background: rgba(233, 233, 233, 1.0);
 }
 
-#about h1 {
-  color: rgba(235, 79, 30, 1.0);
-}
-
-#about h2 {
-  color: rgba(0, 0, 0, 1.0);
-}
-
 #about .value .value-icon {
   color: rgba(235, 79, 30, 1.0);
 }
 
 #services {
   background: #f2976c;
-  color: #ffffff;
 }
 
 #services .service {
@@ -168,28 +158,16 @@ select {
 }
 
 #community {
-  color: rgba(255, 255, 255, 1.0);
   background: linear-gradient(to bottom, rgba(255, 0, 0,0.45) 100%, rgba(255, 0, 0,0.45) 100%), url('../images/comunidade-1000.jpg');
   background-position: center;
   background-size: cover;
-}
-
-#community h1 {
-  background-color: rgba(255, 0, 0, 0.49);
 }
 
 #community .value .value-title {
   display: block;
 }
 
-#team {
-  background: rgba(233, 233, 233, 1.0);
-  color: rgba(119, 119, 119, 1.0);
-}
-
 #team h1 {
-  background-color: rgba(119, 119, 119, 0.65);
-  color: rgba(255, 255, 255, 1.0);
   display: inline-block;
   padding: 10px 60px;
 }
@@ -238,14 +216,12 @@ margin-top: 30px;
 }
 
 #quotes blockquote cite {
-  color: rgba(255, 255, 255, 1.0);
   font-size: 0.7em;
 }
 
 #contact .direct-contact i {
   font-size: 2em;
   vertical-align: baseline;
-  color: #EB4F1E;
 }
 
 #contact .direct-contact a {
@@ -256,11 +232,10 @@ margin-top: 30px;
 
 #contact .value .value-icon {
   font-size: 3em;
-  color: #EB4F1E;
 }
 
 #contact .value .value-icon:hover {
-  color: #777;
+
 }
 
 #contact .social-links {
@@ -269,7 +244,6 @@ margin-top: 30px;
 
 .footer {
   background: rgba(34, 34, 34, 1.0);
-  color: rgba(255, 255, 255, 1.0);
   height: 60px;
 }
 
