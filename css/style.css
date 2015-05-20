@@ -146,15 +146,15 @@ select {
 }
 
 #services .service-box.service-box-desenvolvimento-destaque {
-  background-image: linear-gradient(to bottom, rgba(0, 143, 3,0.6) 100%, rgba(0, 143, 3,0.6) 100%), url(../images/servico-desenvolvimento.jpg);
+  background-image: linear-gradient(to bottom, rgba(74, 49, 33, 0.6)100%, rgba(74, 49, 33, 1) 100%), url(../images/servico-desenvolvimento.jpg);
 }
 
 #services .service-box.service-box-consultoria-destaque {
-  background-image: linear-gradient(to bottom, rgba(96, 126, 255,0.6) 100%, rgba(96, 126, 255,0.6) 100%), url(../images/servico-consultoria.jpg);
+  background-image: linear-gradient(to bottom, rgba(74, 49, 33, 0.6)100%, rgba(74, 49, 33, 1) 100%), url(../images/servico-consultoria.jpg);
 }
 
 #services .service-box.service-box-treinamento-destaque {
-  background-image: linear-gradient(to bottom, rgba(235, 79, 30,0.6) 100%, rgba(235, 79, 30,0.6) 100%), url(../images/servico-treinamentos.jpg);
+  background-image: linear-gradient(to bottom, rgba(74, 49, 33, 0.6)100%, rgba(74, 49, 33, 1) 100%), url(../images/servico-treinamentos.jpg);
 }
 
 #services .service-box .service-icon {
