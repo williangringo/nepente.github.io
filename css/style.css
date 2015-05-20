@@ -126,7 +126,8 @@ select {
 }
 
 #services {
-  background: rgba(245, 245, 245, 1.0);
+  background: #f2976c;
+  color: #ffffff;
 }
 
 #services .service {
