@@ -55,6 +55,19 @@ section {
   color: rgb(69,69,69);
 }
 
+.fundo-marrom {
+  background-color: rgb(74, 49, 31);
+  color: rgb(255, 255, 255);
+}
+
+.fundo-marrom .titulo {
+  color: rgb(242, 151, 108);
+}
+
+.fundo-marrom .subtitulo {
+  color: rgb(255, 255, 255);
+}
+
 h2, p {
   margin-bottom: 40px;
 }
@@ -179,7 +192,7 @@ select {
 }
 
 #community {
-  background: linear-gradient(to bottom, rgba(255, 0, 0,0.45) 100%, rgba(255, 0, 0,0.45) 100%), url('../images/comunidade-1000.jpg');
+  background: linear-gradient(to bottom, rgba(84,35,37,0.8) 100%, rgba(84,35,37,0.8) 100%), url("../images/comunidade-1000.jpg") no-repeat;
   background-position: center;
   background-size: cover;
 }
