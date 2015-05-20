@@ -25,15 +25,15 @@ h1 {
   text-transform: uppercase;
 }
 
-h4 {
+h2 {
   font-size: 1.7em;
 }
 
-h1, h4, p, span {
+h1, h2, p, span {
   font-weight: 300;
 }
 
-h4, p {
+h2, p {
   margin-bottom: 40px;
 }
 
@@ -117,7 +117,7 @@ select {
   color: rgba(235, 79, 30, 1.0);
 }
 
-#about h4 {
+#about h2 {
   color: rgba(0, 0, 0, 1.0);
 }
 
@@ -285,7 +285,7 @@ margin-top: 30px;
     font-size: 2.5em;
   }
 
-  h4 {
+  h2 {
     font-size: 1.9em;
   }
 
