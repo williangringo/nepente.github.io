@@ -131,12 +131,8 @@ select {
 }
 
 #services .service {
-  margin: 20px auto 20px auto;
-  max-width: 500px
-}
-
-#services .service:first-child {
-  margin-top: 0;
+  margin: 0 auto 50px auto;
+  max-width: 500px;
 }
 
 #services .service:last-child {
@@ -353,12 +349,6 @@ margin-top: 30px;
 }
 
 @media only screen and (min-width: 64.063em) {
-  #services .service,
-  #services .service:first-child,
-  #services .service:last-child {
-    margin: 0 auto;
-  }
-
   #services .service {
     max-width: 62.5rem;
   }
