@@ -164,7 +164,6 @@ select {
 #services .service-box {
   height: 150px;
   background-size: cover;
-  background-color: #4A311F
 }
 
 #services .service-box.service-box-desenvolvimento-destaque {
@@ -181,7 +180,6 @@ select {
 
 #services .service-box .service-title {
   font-size: 1.8em;
-  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -201,31 +199,16 @@ select {
   display: block;
 }
 
-#team h1 {
-  display: inline-block;
-  padding: 10px 60px;
-}
-
-#team .team-text{
-  padding-top:40px;
-}
-
 #team .team-list .team-member .team-member-image {
   width: 100%;
 }
 
 #team .team-list .team-member .team-member-link {
-  margin-bottom: 40px;
-margin-top: 30px;
-  display: inline-block;
   text-transform: uppercase;
-  font-weight: normal;
   font-size: 1.2em;
 }
 
 #team .team-list .team-member .team-member-contact li a {
-  position: relative;
-  top: -20px;
   font-size: 2.3em;
 }
 
@@ -245,7 +228,6 @@ margin-top: 30px;
 #quotes blockquote {
   margin-top: 20px;
   font-size: 1.65em;
-  font-weight: 400;
 }
 
 #quotes blockquote cite {
@@ -285,7 +267,7 @@ margin-top: 30px;
 }
 
 @media only screen and (min-width: 40.063em) {
-  h1 {
+  .titulo {
     font-size: 2.5em;
   }
 
@@ -297,19 +279,6 @@ margin-top: 30px;
     background-position: center 85%;
   }
 
-  #hero .logo {
-    font-size: 6em;
-    vertical-align: -15%;
-  }
-
-  #hero .title {
-    display: inline-block;
-    font-size: 6em;
-  }
-
-  #hero .subtitle {
-    font-size: 3em;
-  }
   #community h1 {
     display: inline-block;
     padding: 10px 60px;
