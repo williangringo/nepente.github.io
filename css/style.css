@@ -140,7 +140,6 @@ select {
 }
 
 #services .service-box {
-  color: rgba(255, 255, 255, 1.0);
   height: 150px;
   background-size: cover;
 }
