@@ -24,17 +24,32 @@ p, blockquote {
   margin-bottom: 50px;
 }
 
+p, span {
+  font-size: 1.2em;
+}
+
+select {
+  -moz-appearance: none;
+}
+
 .circular{
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
 }
 
-button, .button {
+[class^="icon-"],
+[class*=" icon-"] {
+  font-size: 5em;
+}
+
+button,
+.button {
   border-radius: 20px;
 }
 
-.titulo, .subtitulo {
+.titulo,
+.subtitulo {
   font-weight: 700;
 }
 
@@ -77,6 +92,10 @@ button, .button {
   color: rgb(242, 151, 108);
 }
 
+.fundo-branco .icone.destaque {
+  color: rgb(74, 49, 31);
+}
+
 .fundo-salmao {
   background-color: rgb(242, 151, 108);
   color: rgb(255, 255, 255);
@@ -103,14 +122,6 @@ button, .button {
   color: rgb(255, 255, 255);
 }
 
-p, span {
-  font-size: 1.3em;
-}
-
-select {
-  -moz-appearance: none;
-}
-
 .valign {
   display: table;
   width: 100%;
@@ -134,7 +145,6 @@ select {
 
 .value .value-title {
   text-transform: uppercase;
-  font-size: 1.2em;
   display: inline-block;
 }
 
@@ -209,7 +219,6 @@ select {
 
 #services .service-box .service-description {
   margin: 0 20px 5px 20px;
-  font-size: 1.2em;
   text-align: left;
 }
 
@@ -229,7 +238,6 @@ select {
 
 #team .team-list .team-member .team-member-link {
   text-transform: uppercase;
-  font-size: 1.2em;
 }
 
 #team .team-list .team-member .team-member-contact li a {
