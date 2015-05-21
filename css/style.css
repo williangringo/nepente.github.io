@@ -20,14 +20,33 @@ section {
   padding: 60px 0px;
 }
 
-.titulo {
-  font-size: 2.2em;
-  text-transform: uppercase;
+p, blockquote {
+  margin-bottom: 50px;
+}
+
+.circular{
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+button, .button {
+  border-radius: 20px;
+}
+
+.titulo, .subtitulo {
   font-weight: 700;
 }
 
+.titulo {
+  font-size: 2.2em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
 .subtitulo {
-  font-size: 1.7em;
+  font-size: 1.8em;
+  margin-bottom: 40px;
 }
 
 .fundo-branco {
@@ -40,6 +59,16 @@ section {
 
 .fundo-branco .subtitulo {
   color: rgb(69,69,69);
+}
+
+.fundo-branco button,
+.fundo-branco .button {
+  color: rgb(255, 255, 255);
+  background: rgb(242, 151, 108);
+}
+
+.fundo-branco .icone {
+  color: rgb(242, 151, 108);
 }
 
 .fundo-salmao {
@@ -68,10 +97,6 @@ section {
   color: rgb(255, 255, 255);
 }
 
-h2, p {
-  margin-bottom: 40px;
-}
-
 p, span {
   font-size: 1.3em;
 }
@@ -85,17 +110,20 @@ select {
   width: 100%;
 }
 
-.valign > div {
+.valign > .align {
   display: table-cell;
 }
 
-.valign.middle > div {
+.valign > .align.middle {
   vertical-align: middle;
 }
 
-.value .value-icon {
-  font-size: 4.5em;
-  margin-bottom: 15px;
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
 }
 
 .value .value-title {
@@ -136,20 +164,11 @@ select {
   background: linear-gradient(to bottom, rgba(84,35,37,0.8) 100%, rgba(84,35,37,0.8) 100%), url("../images/hero-1000.jpg") no-repeat;
   background-position: center;
   background-size: cover;
-  color: rgba(255, 255, 255, 1.0);
 }
 
-#hero img {
+#hero .logo {
   width: 100%;
   max-width: 800px;
-}
-
-#about .value .value-icon {
-  color: rgba(235, 79, 30, 1.0);
-}
-
-#services {
-  background: #f2976c;
 }
 
 #services .service {
@@ -179,7 +198,6 @@ select {
 }
 
 #services .service-box .service-title {
-  font-size: 1.8em;
   text-transform: uppercase;
 }
 
@@ -217,8 +235,7 @@ select {
 }
 
 #quotes {
-  background: rgba(162, 162, 162, 1.0);
-  color: rgba(255, 255, 255, 1.0);
+  color: rgb(242, 151, 108);
 }
 
 #quotes i {
@@ -227,11 +244,13 @@ select {
 
 #quotes blockquote {
   margin-top: 20px;
+  border: none;
   font-size: 1.65em;
 }
 
 #quotes blockquote cite {
   font-size: 0.7em;
+  color: rgb(255, 255, 255);
 }
 
 #contact .direct-contact i {
@@ -247,10 +266,6 @@ select {
 
 #contact .value .value-icon {
   font-size: 3em;
-}
-
-#contact .value .value-icon:hover {
-
 }
 
 #contact .social-links {
@@ -278,17 +293,6 @@ select {
   #hero {
     background-position: center 85%;
   }
-
-  #community h1 {
-    display: inline-block;
-    padding: 10px 60px;
-  }
-
-  #contacts {
-    background: url(../images/contacts-bg.jpg) 50% 50%;
-    background-position: center;
-    background-size: cover;
-  }
 }
 
 @media only screen and (min-width: 64.063em) {
@@ -299,10 +303,4 @@ select {
   #services .service-box {
     height: 250px;
   }
-}
-
-.circular{
-  border-radius: 150px;
-  -webkit-border-radius: 150px;
-  -moz-border-radius: 150px;
 }
