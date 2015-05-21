@@ -38,9 +38,18 @@ select {
   -moz-border-radius: 50%;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 [class^="icon-"],
 [class*=" icon-"] {
   font-size: 5em;
+}
+
+[class^="icon-"].destaque,
+[class*=" icon-"].destaque {
+  border-radius: 25%;
 }
 
 button,
@@ -88,11 +97,14 @@ button,
   background: rgb(74, 49, 31);
 }
 
-.fundo-branco .icone {
+.fundo-branco [class^="icon-"],
+.fundo-branco [class*=" icon-"] {
   color: rgb(242, 151, 108);
 }
 
-.fundo-branco .icone.destaque {
+.fundo-branco [class^="icon-"].destaque,
+.fundo-branco [class*=" icon-"].destaque {
+  background-color: rgb(242, 151, 108);
   color: rgb(74, 49, 31);
 }
 
@@ -122,6 +134,18 @@ button,
   color: rgb(255, 255, 255);
 }
 
+.fundo-marrom [class^="icon-"],
+.fundo-marrom [class*=" icon-"] {
+  color: rgb(242, 151, 108);
+}
+
+.fundo-marrom [class^="icon-"].destaque,
+.fundo-marrom [class*=" icon-"].destaque {
+  background-color: rgb(242, 151, 108);
+  color: rgb(74, 49, 31);
+}
+
+
 .valign {
   display: table;
   width: 100%;
@@ -129,7 +153,6 @@ button,
 
 .valign > .align {
   display: table-cell;
-  height: auto;
 }
 
 .valign > .align.middle {
@@ -142,11 +165,6 @@ button,
 
 .no-padding {
   padding: 0;
-}
-
-.value .value-title {
-  text-transform: uppercase;
-  display: inline-block;
 }
 
 [data-abide] small.error {
@@ -230,8 +248,8 @@ button,
   background-size: cover;
 }
 
-#community .value .value-title {
-  display: block;
+#community .value p {
+  margin-top: 20px;
 }
 
 #team .team-list .team-member .team-member-image {
@@ -280,7 +298,8 @@ button,
   line-height: 3em;
 }
 
-#contact .value .value-icon {
+#contact .value [class^="icon-"],
+#contact .value [class*=" icon-"] {
   font-size: 3em;
 }
 
@@ -289,11 +308,12 @@ button,
 }
 
 .footer {
-  padding: 15px 0 15px 0;
+  background: rgba(34, 34, 34, 1.0);
+  height: 60px;
 }
 
 .footer .essence {
-  color: rgb(242, 151, 108);
+  line-height: 2em;
 }
 
 @media only screen and (min-width: 40.063em) {
