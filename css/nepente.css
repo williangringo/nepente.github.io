@@ -294,6 +294,7 @@ button,
 
 .footer .essence {
   line-height: 2em;
+  color: rgb(242, 151, 108);
 }
 
 @media only screen and (min-width: 40.063em) {
