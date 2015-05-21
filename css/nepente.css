@@ -199,6 +199,7 @@ button,
 #services .service-box {
   height: 150px;
   background-size: cover;
+  padding: 30px 0 10px 0;
 }
 
 #services .service-box.service-box-desenvolvimento-destaque {
@@ -306,6 +307,10 @@ button,
 
   #hero {
     background-position: center 85%;
+  }
+
+  #services .service-box {
+    padding: 30px 20px 10px 20px;
   }
 }
 
