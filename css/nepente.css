@@ -129,6 +129,7 @@ button,
 
 .valign > .align {
   display: table-cell;
+  height: auto;
 }
 
 .valign > .align.middle {
@@ -288,12 +289,10 @@ button,
 }
 
 .footer {
-  background: rgba(34, 34, 34, 1.0);
-  height: 60px;
+  padding: 15px 0 15px 0;
 }
 
 .footer .essence {
-  line-height: 2em;
   color: rgb(242, 151, 108);
 }
 
