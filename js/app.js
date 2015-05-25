@@ -39,10 +39,6 @@
     });
   }
 
-  function startToTop() {
-    $().UItoTop({ easingType: 'easeOutQuart' });
-  }
-
   function startStellar() {
     $.stellar({ horizontalScrolling: false });
   }
@@ -72,7 +68,6 @@
   $(document).ready(startMalarkey);
 
   if (!isSmallScreen) {
-    $(document).ready(startToTop);
     $(document).ready(startStellar);
   }
 
