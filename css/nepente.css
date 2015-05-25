@@ -145,7 +145,6 @@ button,
   color: rgb(74, 49, 31);
 }
 
-
 .valign {
   display: table;
   width: 100%;
@@ -165,146 +164,6 @@ button,
 
 .no-padding {
   padding: 0;
-}
-
-[data-abide] small.error {
-  background: #EB4F1E;
-}
-
-#toTop {
-  display: none;
-  text-decoration: none;
-  position: fixed;
-  bottom: 80px;
-  right: 30px;
-  overflow: hidden;
-  border: none;
-  color: rgba(204, 204, 204, 1.0);
-  width: 40px;
-  height: 43px;
-  font-size: 43px;
-  line-height: 38px;
-  z-index: 20;
-  -webkit-transition: color 0.5s ease;
-  transition: color 0.5s ease;
-}
-
-#toTop:hover {
-  outline: none;
-  color: rgba(192, 192, 192, 1.0);
-}
-
-#hero {
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(84,35,37,0.8) 100%, rgba(84,35,37,0.8) 100%), url("../images/hero-1000.jpg") no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-#hero .logo {
-  width: 100%;
-  max-width: 800px;
-}
-
-#services .service {
-  margin: 0 auto 50px auto;
-  max-width: 500px;
-}
-
-#services .service:last-child {
-  margin-bottom: 0;
-}
-
-#services .service-box {
-  height: 150px;
-  background-size: cover;
-  padding: 30px 0 10px 0;
-}
-
-#services .service-box.service-box-desenvolvimento-destaque {
-  background-image: linear-gradient(to bottom, rgba(74, 49, 33, 0.6)100%, rgba(74, 49, 33, 1) 100%), url(../images/servico-desenvolvimento.jpg);
-}
-
-#services .service-box.service-box-consultoria-destaque {
-  background-image: linear-gradient(to bottom, rgba(74, 49, 33, 0.6)100%, rgba(74, 49, 33, 1) 100%), url(../images/servico-consultoria.jpg);
-}
-
-#services .service-box.service-box-treinamento-destaque {
-  background-image: linear-gradient(to bottom, rgba(74, 49, 33, 0.6)100%, rgba(74, 49, 33, 1) 100%), url(../images/servico-treinamentos.jpg);
-}
-
-#services .service-box .service-title {
-  text-transform: uppercase;
-}
-
-#services .service-box .service-description {
-  margin: 0 20px 5px 20px;
-  text-align: left;
-}
-
-#community {
-  background: linear-gradient(to bottom, rgba(84,35,37,0.8) 100%, rgba(84,35,37,0.8) 100%), url("../images/comunidade-1000.jpg") no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-#community .value p {
-  margin-top: 20px;
-}
-
-#team .team-list .team-member .team-member-image {
-  width: 100%;
-}
-
-#team .team-list .team-member .team-member-link {
-  text-transform: uppercase;
-}
-
-#team .team-list .team-member .team-member-contact li a {
-  font-size: 2.3em;
-}
-
-#team .team-list .team-member .team-member-contact li a:hover{
-  color: #EB4F1E;
-}
-
-#quotes {
-  color: rgb(242, 151, 108);
-}
-
-#quotes i {
-  font-size: 2em;
-}
-
-#quotes blockquote {
-  margin-top: 20px;
-  border: none;
-  font-size: 1.65em;
-}
-
-#quotes blockquote cite {
-  font-size: 0.7em;
-  color: rgb(255, 255, 255);
-}
-
-#contact .direct-contact i {
-  font-size: 2em;
-  vertical-align: baseline;
-}
-
-#contact .direct-contact a {
-  margin-left: 15px;
-  font-size: 1.3em;
-  line-height: 3em;
-}
-
-#contact .value [class^="icon-"],
-#contact .value [class*=" icon-"] {
-  font-size: 3em;
-}
-
-#contact .social-links {
-  margin-top: 50px;
 }
 
 .footer {
@@ -329,23 +188,5 @@ button,
 
   .subtitulo {
     font-size: 1.9em;
-  }
-
-  #hero {
-    background-position: center 85%;
-  }
-
-  #services .service-box {
-    padding: 30px 20px 10px 20px;
-  }
-}
-
-@media only screen and (min-width: 64.063em) {
-  #services .service {
-    max-width: 62.5rem;
-  }
-
-  #services .service-box {
-    height: 250px;
   }
 }
