@@ -47,10 +47,6 @@
     $.stellar({ horizontalScrolling: false });
   }
 
-  function startWow() {
-    new WOW().init();
-  }
-
   function startMalarkey() {
     var element = document.querySelector('.malarkey');
 
@@ -78,7 +74,6 @@
   if (!isSmallScreen) {
     $(document).ready(startToTop);
     $(document).ready(startStellar);
-    $(document).ready(startWow);
   }
 
 }());
