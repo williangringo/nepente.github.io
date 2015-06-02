@@ -1,0 +1,20 @@
+# Site settings
+title: nepente - Artesanato de Software
+name: nepente
+description: Nos espelhamos no ofício carinhoso dos artesãos para colocarmos a alma em cada bit produzido. Abraçamos as tecnologias, práticas e metodologias do século 21 para alavancar a construção de software.
+type: website
+baseurl: ""
+url: "http://www.nepente.io/"
+hero: "images/hero-1000.jpg"
+domain_verify: "ab2415a1e384cab09dc212091d7e5e47"
+twitter_username: "nepente_io"
+github_username:  "nepente"
+google_plus_username: "104378205661701738018"
+linkedin_username: "nepente"
+facebook_username: "nepente.io"
+email: "ola@nepente.io"
+phone: "+55 (47) 3046-6894"
+phone_href: "+554730466894"
+
+# Build settings
+markdown: kramdown

@@ -1,0 +1,60 @@
+<section id="contact" class="text-center fundo-branco" data-stellar-background-ratio="0.5">
+  <div class="row">
+    <div class="columns medium-12">
+      <h1 class="titulo">fale conosco</h1>
+      <h2 class="subtitulo">entre em contato, adoraríamos poder te ajudar!</h2>
+      <ul class="direct-contact small-block-grid-1 medium-block-grid-4">
+        <li></li>
+        <li>
+          <i class="icone icon-envelope"></i><a href="mailto:{{site.email}}">{{site.email}}</a>
+        </li>
+        <li>
+          <i class="icone icon-phone"></i><a href="tel:{{site.phone_href}}">{{site.phone}}</a>
+        </li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+  <form id="frmContato" data-abide>
+    <div class="row">
+      <div class="columns medium-8 medium-centered">
+        <input type="text" name="nome" placeholder="Seu nome, por favor" required pattern="[a-zA-Z]+">
+        <small class="error">Você esqueceu de nos dizer seu nome. :(</small>
+      </div>
+      <div class="columns medium-8 medium-centered">
+        <input type="email" name="email" placeholder="Um e-mail para contato" required>
+        <small class="error">Ooops. Precisamos do seu e-mail para entrar em contato.</small>
+      </div>
+      <div class="columns medium-8 medium-centered">
+        <select name="assunto" required>
+          <option value="">Qual o assunto?</option>
+          <option value="novo-projeto">Um novo projeto</option>
+          <option value="duvidas-trabalho">Dúvidas sobre como trabalhamos</option>
+          <option value="criticas-elogios">Críticas e elogios</option>
+        </select>
+        <small class="error">Nos diga sobre o que deseja conversar.</small>
+      </div>
+      <div class="columns medium-8 medium-centered">
+        <textarea name="texto" rows="5" placeholder="Como podemos lhe ajudar?" required></textarea>
+        <small class="error">Falta pouco. Escreva algumas linhas para que possamos iniciar essa aventura.</small>
+      </div>
+    </div>
+    <div class="row">
+      <button id="btnContato">Contate-nos!</button>
+    </div>
+    <div class="row">
+      <span id="msgContato" sytle="display:none;"></span>
+    </div>
+  </form>
+  <div class="row">
+    <div class="columns medium-12">
+      <ul class="value small-block-grid-3 medium-block-grid-5 text-center social-links">
+        <li><a href="https://twitter.com/{{site.twitter_username}}" target="_blank" class="icon-twitter"></a></li>
+        <li><a href="https://github.com/{{site.github_username}}" target="_blank" class="icon-github"></a></li>
+        <li><a href="https://plus.google.com/{{site.google_plus_username}}" rel="publisher" target="_blank" class="icon-google-plus"></a></li>
+        <li><a href="https://www.linkedin.com/company/{{site.linkedin_username}}" class="icon-linkedin"></a></li>
+        <li><a href="https://www.facebook.com/{{site.facebook_username}}" class="icon-facebook"></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
