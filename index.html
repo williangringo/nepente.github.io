@@ -2,30 +2,16 @@
 layout: default
 ---
 
-<body>
+{% include hero.html %}
 
-  {% include hero.html %}
+{% include quem-somos.html %}
 
-  {% include quem-somos.html %}
+{% include servicos.html %}
 
-  {% include servicos.html %}
+{% include comunidade.html %}
 
-  {% include comunidade.html %}
+{% include time.html %}
 
-  {% include time.html %}
+{% include quotes.html %}
 
-  {% include quotes.html %}
-
-  {% include contato.html %}
-
-</section>
-
-<script src="js/media.match.min.js"></script>
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/foundation/js/foundation.min.js"></script>
-<script src="bower_components/jquery.stellar/jquery.stellar.min.js"></script>
-<script src="js/malarkey.min.js"></script>
-<script src="js/app.js"></script>
-<script src="js/email.js"></script>
-</body>
-</html>
+{% include contato.html %}
