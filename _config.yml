@@ -1,3 +1,5 @@
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
+
 # Site settings
 title: nepente - Artesanato de Software
 name: nepente
