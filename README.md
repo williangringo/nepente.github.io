@@ -2,12 +2,12 @@
 
 ## Pré requisitos
 
-* Bundler
-* Rake
+* Rake (Dica: `gem install rake`)
+* Bundler (Dica: `gem install bundler`)
 
 ## Passo-a-passo
 
-Certifique que está no branch **source**
+Certifique que está no branch `source`
 
 ```
 git checkout source
