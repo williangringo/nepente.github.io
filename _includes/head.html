@@ -1,12 +1,12 @@
 <head>
-  <title>{{site.title}}</title>
+  <title>{% t page.title %}</title>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{site.description}}">
 
   <!-- Open Graph Protocol Metadata -->
-  <meta property="og:title" content="{{site.title}}" />
+  <meta property="og:title" content="{% t page.title %}" />
   <meta property="og:type" content="{{site.type}}" />
   <meta property="og:url" content="{{site.url}}" />
   <meta property="og:image" content="{{site.hero | prepend:site.url}}" />
@@ -17,7 +17,7 @@
   <!-- Twitter Cards Metadata -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="{{site.twitter_username}}" />
-  <meta name="twitter:title" content="{{site.title}}" />
+  <meta name="twitter:title" content="{% t page.title %}" />
   <meta name="twitter:description" content="{{site.description}}" />
   <meta name="twitter:image" content="{{site.hero | prepend:site.url}}" />
   <meta name="twitter:url" content="{{site.url}}" />
