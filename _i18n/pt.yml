@@ -28,3 +28,7 @@ comunidade:
   eventos: "Eventos"
 time:
   titulo: "Time: A base"
+citacoes:
+  1:
+    citacao: "O único jeito de fazer um belo trabalho é amar o que você faz. Se você ainda não achou, continue procurando."
+    autor: "Steve Jobs"
