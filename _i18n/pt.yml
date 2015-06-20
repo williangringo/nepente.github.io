@@ -1,5 +1,6 @@
 titles:
   home: "nepente - Artesanato de Software"
+nosso_ouro: "Aurum nostrum non est aurum vulgi."
 quem_somos:
   titulo: "software com propósito"
   subtitulo: "que une a nossa energia com as suas ideias"
@@ -49,3 +50,5 @@ contato:
     texto: "Como podemos lhe ajudar?"
     texto_erro: "Falta pouco. Escreva algumas linhas para que possamos iniciar essa aventura."
     botao_envio: "Contate-nos!"
+rodape:
+  desenvolvido_em: "Orgulhosamente desenvolvido no Vale do Itajaí."
