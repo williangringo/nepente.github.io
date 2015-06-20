@@ -26,3 +26,5 @@ comunidade:
   blog: "Blog"
   github: "GitHub"
   eventos: "Eventos"
+time:
+  titulo: "Time: A base"
