@@ -20,3 +20,6 @@ phone_href: "+554730466894"
 
 # Build settings
 markdown: kramdown
+
+# i18n
+languages: ["pt", "en"]
