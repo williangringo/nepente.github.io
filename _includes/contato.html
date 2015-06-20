@@ -1,8 +1,8 @@
 <section id="contact" class="text-center fundo-branco" data-stellar-background-ratio="0.5">
   <div class="row">
     <div class="columns medium-12">
-      <h1 class="titulo">fale conosco</h1>
-      <h2 class="subtitulo">entre em contato, adoraríamos poder te ajudar!</h2>
+      <h1 class="titulo">{% t contato.titulo %}</h1>
+      <h2 class="subtitulo">{% t contato.subtitulo %}</h2>
       <ul class="direct-contact small-block-grid-1 medium-block-grid-4">
         <li></li>
         <li>
@@ -18,29 +18,29 @@
   <form id="frmContato" data-abide>
     <div class="row">
       <div class="columns medium-8 medium-centered">
-        <input type="text" name="nome" placeholder="Seu nome, por favor" required pattern="[a-zA-Z]+">
-        <small class="error">Você esqueceu de nos dizer seu nome. :(</small>
+        <input type="text" name="nome" placeholder="{% t contato.formulario.nome %}" required pattern="[a-zA-Z]+">
+        <small class="error">{% t contato.formulario.nome_erro %}</small>
       </div>
       <div class="columns medium-8 medium-centered">
-        <input type="email" name="email" placeholder="Um e-mail para contato" required>
-        <small class="error">Ooops. Precisamos do seu e-mail para entrar em contato.</small>
+        <input type="email" name="email" placeholder="{% t contato.formulario.email %}" required>
+        <small class="error">{% t contato.formulario.email_erro %}</small>
       </div>
       <div class="columns medium-8 medium-centered">
         <select name="assunto" required>
-          <option value="">Qual o assunto?</option>
-          <option value="novo-projeto">Um novo projeto</option>
-          <option value="duvidas-trabalho">Dúvidas sobre como trabalhamos</option>
-          <option value="criticas-elogios">Críticas e elogios</option>
+          <option value="">{% t contato.formulario.assunto.padrao %}</option>
+          <option value="novo-projeto">{% t contato.formulario.assunto.novo_projeto %}</option>
+          <option value="duvidas-trabalho">{% t contato.formulario.assunto.como_trabalhamos %}</option>
+          <option value="criticas-elogios">{% t contato.formulario.assunto.criticas_elogios %}</option>
         </select>
-        <small class="error">Nos diga sobre o que deseja conversar.</small>
+        <small class="error">{% t contato.formulario.assunto.erro %}.</small>
       </div>
       <div class="columns medium-8 medium-centered">
-        <textarea name="texto" rows="5" placeholder="Como podemos lhe ajudar?" required></textarea>
-        <small class="error">Falta pouco. Escreva algumas linhas para que possamos iniciar essa aventura.</small>
+        <textarea name="texto" rows="5" placeholder="{% t contato.formulario.texto %}" required></textarea>
+        <small class="error">{% t contato.formulario.texto_erro %}</small>
       </div>
     </div>
     <div class="row">
-      <button id="btnContato">Contate-nos!</button>
+      <button id="btnContato">{% t contato.formulario.botao_envio %}</button>
     </div>
     <div class="row">
       <span id="msgContato" sytle="display:none;"></span>
