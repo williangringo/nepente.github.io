@@ -1,0 +1,32 @@
+#envie-seu-curriculo {
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  background: rgb(74, 49, 31);
+  color: rgb(255, 255, 255);
+}
+
+#envie-seu-curriculo p {
+  display: inline-block;
+  line-height: 40px;
+}
+
+#envie-seu-curriculo p a {
+  text-decoration: underline;
+}
+
+#envie-seu-curriculo span {
+  margin-left: 25px;
+  border: 2px rgb(244, 162, 119) solid;
+  border-radius: 5px;
+  padding: 0 6px;
+  cursor: pointer;
+}
+
+#envie-seu-curriculo span:hover {
+  background: rgb(244, 162, 119);
+  border: 2px rgb(74, 49, 31) solid;
+  color: rgb(74, 49, 31);
+}
