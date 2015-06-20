@@ -19,3 +19,10 @@ servicos:
   treinamento:
     titulo: "Treinamentos"
     descricao: "Somos altruístas. Realizamos capacitações de ferramentas, técnicas e conceitos que dominamos a fim de evoluir as expertises simbioticamente. A força de vontade em compartilhar a sabedoria é a razão para aprendermos cada vez mais."
+comunidade:
+  titulo: "uma comunidade"
+  subtitulo: "de pessoas apaixonadas por tecnologia"
+  descricao: "Acreditamos que a melhor forma de fazer um mundo melhor é através da colaboração.<br />Gostamos de compartilhar conhecimento, boas histórias e esperamos você se juntar a nós."
+  blog: "Blog"
+  github: "GitHub"
+  eventos: "Eventos"
