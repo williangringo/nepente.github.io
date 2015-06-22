@@ -1,7 +1,6 @@
 #envie-seu-curriculo {
   position: fixed;
   bottom: 0;
-  height: 40px;
   width: 100%;
   text-align: center;
   background: rgb(74, 49, 31);
@@ -9,8 +8,11 @@
 }
 
 #envie-seu-curriculo p {
-  display: inline-block;
-  line-height: 40px;
+  margin: 0;
+}
+
+#envie-seu-curriculo p b {
+  display: block;
 }
 
 #envie-seu-curriculo p a {
@@ -34,4 +36,19 @@
 
 footer {
   margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 40.063em) {
+  #envie-seu-curriculo {
+    height: 40px;
+  }
+
+  #envie-seu-curriculo p {
+    display: inline-block;
+    line-height: 40px;
+  }
+
+  #envie-seu-curriculo p b {
+    display: inline;
+  }
 }
