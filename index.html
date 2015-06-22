@@ -17,4 +17,6 @@ title: titles.home
 
 {% include contato.html %}
 
-{% include envie-seu-curriculo.html %}
+{% if site.lang == "pt" %}
+  {% include envie-seu-curriculo.html %}
+{% endif %}
