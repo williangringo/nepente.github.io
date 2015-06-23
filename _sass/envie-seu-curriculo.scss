@@ -1,14 +1,10 @@
 #envie-seu-curriculo {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   text-align: center;
-  background: rgb(74, 49, 31);
-  color: rgb(255, 255, 255);
 }
 
 #envie-seu-curriculo p {
-  margin: 0;
+  margin-bottom: 0;
+  margin-top: 15px;
 }
 
 #envie-seu-curriculo p b {
@@ -16,38 +12,15 @@
 }
 
 #envie-seu-curriculo p a {
-  text-decoration: underline;
   color: rgb(244, 162, 119);
 }
 
-#envie-seu-curriculo span {
-  margin-left: 10px;
-  border: 2px rgb(244, 162, 119) solid;
-  border-radius: 5px;
-  padding: 0 6px;
-  cursor: pointer;
+#envie-seu-curriculo p a:hover {
+  text-decoration: underline;
 }
 
-#envie-seu-curriculo span:hover {
-  background: rgb(244, 162, 119);
-  border: 2px rgb(74, 49, 31) solid;
-  color: rgb(74, 49, 31);
-}
-
-footer {
-  margin-bottom: 40px;
-}
 
 @media only screen and (min-width: 40.063em) {
-  #envie-seu-curriculo {
-    height: 40px;
-  }
-
-  #envie-seu-curriculo p {
-    display: inline-block;
-    line-height: 40px;
-  }
-
   #envie-seu-curriculo p b {
     display: inline;
   }
