@@ -95,13 +95,12 @@
       postfix: ''
     };
 
-    malarkey(element, options).
-    type('desenvolvendo').pause().delete().
-    type('esculpindo').pause().delete().
-    type('lapidando').pause().delete().
-    type('tecendo').pause().delete().
-    type('elaborando').pause().delete().
-    type('confeccionando').pause().delete();
+    var palavras = $(element).data('palavras').split(',');
+    var malarkeyObj = malarkey(element, options);
+
+    for (var i=0; i < palavras.length; i++) {
+      malarkeyObj = malarkeyObj.type(palavras[i]).pause().delete();
+    }
   }
 
   $(document).foundation();
