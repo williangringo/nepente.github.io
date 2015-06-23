@@ -26,15 +26,6 @@
         <small class="error">{% t contato.formulario.email_erro %}</small>
       </div>
       <div class="columns medium-8 medium-centered">
-        <select name="assunto" required>
-          <option value="">{% t contato.formulario.assunto.padrao %}</option>
-          <option value="novo-projeto">{% t contato.formulario.assunto.novo_projeto %}</option>
-          <option value="duvidas-trabalho">{% t contato.formulario.assunto.como_trabalhamos %}</option>
-          <option value="criticas-elogios">{% t contato.formulario.assunto.criticas_elogios %}</option>
-        </select>
-        <small class="error">{% t contato.formulario.assunto.erro %}.</small>
-      </div>
-      <div class="columns medium-8 medium-centered">
         <textarea name="texto" rows="5" placeholder="{% t contato.formulario.texto %}" required></textarea>
         <small class="error">{% t contato.formulario.texto_erro %}</small>
       </div>

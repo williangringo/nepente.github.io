@@ -49,12 +49,6 @@ contato:
     nome_erro: "You forget to tell us your name. :("
     email: "An e-mail for contact"
     email_erro: "Ooops. We need your e-mail to get in touch."
-    assunto:
-      padrao: "What you would like to talk about?"
-      novo_projeto: "A new project"
-      como_trabalhamos: "Questions about the way we work"
-      criticas_elogios: "Críticas e elogios"
-      erro: "Tell us what you would like to talk about"
     texto: "How can we help you?"
     texto_erro: "Almost there. Write a few lines to begin our journey."
     botao_envio: "Contact us!"
